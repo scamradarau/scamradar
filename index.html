@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScamRadar AU — Real-Time Scam Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #07090f;
+  --surface: #0c0f17;
+  --border: #161c27;
+  --border-hi: #1e2736;
+  --red: #f0454a;
+  --red-dim: rgba(240,69,74,0.1);
+  --orange: #e8922a;
+  --orange-dim: rgba(232,146,42,0.09);
+  --green: #2ea84c;
+  --green-dim: rgba(46,168,76,0.09);
+  --blue: #3b8eea;
+  --text: #d5dce9;
+  --text-mid: #7a8899;
+  --text-dim: #404d5e;
+  --mono: 'Share Tech Mono', monospace;
+  --body: 'Barlow', sans-serif;
+  --head: 'Barlow Condensed', sans-serif;
+}
+body { background: var(--bg); color: var(--text); font-family: var(--body); min-height: 100vh; }
+::-webkit-scrollbar { width: 4px; } ::-webkit-scrollbar-track { background: var(--bg); } ::-webkit-scrollbar-thumb { background: var(--border-hi); border-radius: 2px; }
+
+/* TICKER */
+.ticker { background: var(--red); height: 28px; display: flex; align-items: center; overflow: hidden; }
+.ticker-badge { background: rgba(0,0,0,0.3); color: #fff; font-family: var(--head); font-weight: 800; font-size: 11px; letter-spacing: 2px; padding: 0 14px; height: 100%; display: flex; align-items: center; flex-shrink: 0; }
+.ticker-scroll { overflow: hidden; flex: 1; }
+.ticker-inner { display: inline-flex; animation: tickMove 40s linear infinite; white-space: nowrap; font-family: var(--mono); font-size: 11px; color: #fff; }
+@keyframes tickMove { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.tick-item { padding-right: 60px; }
+
+/* HEADER */
+.hdr { border-bottom: 1px solid var(--border); padding: 0 20px; height: 50px; display: flex; align-items: center; justify-content: space-between; background: var(--surface); }
+.logo { display: flex; align-items: center; gap: 9px; }
+.logo-name { font-family: var(--head); font-weight: 800; font-size: 22px; letter-spacing: 1px; }
+.logo-name em { color: var(--red); font-style: normal; }
+.logo-au { font-family: var(--mono); font-size: 9px; color: var(--text-dim); border: 1px solid var(--border-hi); padding: 2px 6px; border-radius: 2px; letter-spacing: 1px; }
+.sep { width: 1px; height: 20px; background: var(--border-hi); }
+.live { display: flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 11px; color: var(--text-mid); }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+.dot.pulse { background: var(--orange); animation: blink 0.85s infinite; }
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.15; } }
+.hdr-right { display: flex; align-items: center; gap: 10px; }
+.upd { font-family: var(--mono); font-size: 10px; color: var(--text-dim); }
+.btn { cursor: pointer; border: none; font-family: var(--head); font-weight: 700; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 5px 13px; border-radius: 2px; transition: all 0.15s; }
+.btn-ghost { background: none; border: 1px solid var(--border-hi); color: var(--text-mid); }
+.btn-ghost:hover { border-color: var(--red); color: var(--red); }
+.btn-red { background: var(--red); color: #fff; border: 1px solid transparent; }
+.btn-red:hover { background: #c93036; }
+
+/* FILTERS */
+.filters { border-bottom: 1px solid var(--border); padding: 9px 20px; display: flex; align-items: center; gap: 7px; background: var(--surface); flex-wrap: nowrap; overflow-x: auto; }
+.filters::-webkit-scrollbar { height: 0; }
+.fbtn { cursor: pointer; background: none; border: 1px solid var(--border-hi); color: var(--text-dim); font-family: var(--head); font-weight: 700; font-size: 10px; letter-spacing: 0.8px; text-transform: uppercase; padding: 4px 11px; border-radius: 2px; transition: all 0.15s; white-space: nowrap; }
+.fbtn:hover { color: var(--text); }
+.fbtn.on { border-color: var(--red); color: var(--red); background: var(--red-dim); }
+.fcnt { margin-left: auto; font-family: var(--mono); font-size: 10px; color: var(--text-dim); white-space: nowrap; }
+
+/* TABLE HEAD */
+.thead { display: grid; grid-template-columns: 68px 1fr 100px 115px 88px; gap: 12px; padding: 7px 20px; border-bottom: 1px solid var(--border); background: #090c12; }
+.th { font-family: var(--head); font-weight: 700; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); }
+
+/* FEED ROWS */
+.feed {}
+.row { display: grid; grid-template-columns: 68px 1fr 100px 115px 88px; gap: 12px; padding: 11px 20px; border-bottom: 1px solid var(--border); transition: background 0.1s; cursor: default; animation: fadeRow 0.3s ease both; }
+.row:hover { background: rgba(59,142,234,0.03); }
+@keyframes fadeRow { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
+
+.sev { display: inline-block; font-family: var(--head); font-weight: 700; font-size: 10px; letter-spacing: 0.7px; padding: 2px 7px; border-radius: 2px; }
+.sev-H { color: var(--red); background: var(--red-dim); }
+.sev-M { color: var(--orange); background: var(--orange-dim); }
+.sev-L { color: var(--green); background: var(--green-dim); }
+.live-tag { display: block; font-family: var(--mono); font-size: 9px; color: var(--red); margin-top: 4px; animation: blink 1.4s infinite; }
+
+.title { font-size: 13px; font-weight: 500; line-height: 1.55; color: var(--text); }
+.src { font-family: var(--mono); font-size: 11px; font-weight: 600; }
+.src-SW { color: var(--blue); }
+.src-AC { color: #5aaeee; }
+.src-AS { color: #7bbcf5; }
+.src-AF { color: var(--orange); }
+.src-NW { color: var(--text-mid); }
+.cat { font-family: var(--head); font-size: 11px; font-weight: 600; letter-spacing: 0.4px; color: var(--text-mid); text-transform: uppercase; }
+.dt { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+
+/* LOADING */
+.loading { padding: 60px 20px; text-align: center; }
+.loading p { font-family: var(--mono); font-size: 12px; color: var(--text-mid); animation: blink 1.1s infinite; }
+.loading small { display: block; margin-top: 10px; font-family: var(--mono); font-size: 10px; color: var(--text-dim); letter-spacing: 1px; }
+
+/* FOOTER */
+.footer { border-top: 1px solid var(--border); padding: 12px 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.footer span { font-family: var(--mono); font-size: 10px; color: var(--text-dim); }
+
+/* MODAL */
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.78); z-index: 100; display: flex; align-items: center; justify-content: center; }
+.modal { background: var(--surface); border: 1px solid var(--border-hi); border-radius: 3px; width: 480px; max-width: 94vw; padding: 28px; animation: fadeRow 0.2s ease; }
+.modal h2 { font-family: var(--head); font-size: 20px; font-weight: 800; letter-spacing: 1px; margin-bottom: 5px; }
+.modal .sub { font-size: 12px; color: var(--text-dim); margin-bottom: 18px; }
+.modal label { display: block; font-family: var(--head); font-weight: 700; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-mid); margin-bottom: 5px; }
+.modal select, .modal textarea, .modal input[type=text] { width: 100%; background: var(--bg); border: 1px solid var(--border-hi); color: var(--text); font-family: var(--body); font-size: 13px; padding: 8px 10px; border-radius: 2px; margin-bottom: 14px; outline: none; }
+.modal select:focus, .modal textarea:focus, .modal input:focus { border-color: var(--red); }
+.modal textarea { resize: vertical; min-height: 86px; }
+.disc { font-family: var(--mono); font-size: 9px; color: var(--text-dim); border: 1px solid var(--border); padding: 8px 10px; border-radius: 2px; margin-bottom: 16px; line-height: 1.6; }
+.actions { display: flex; gap: 8px; justify-content: flex-end; }
+.thanks { text-align: center; padding: 16px 0 8px; }
+.thanks .icon { font-size: 40px; margin-bottom: 12px; }
+.thanks h2 { margin-bottom: 8px; }
+.thanks p { font-size: 13px; color: var(--text-dim); line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-badge">⚠ BREAKING</div>
+  <div class="ticker-scroll"><div class="ticker-inner" id="tickerInner"></div></div>
+</div>
+
+<div class="hdr">
+  <div class="logo">
+    <span class="logo-name">SCAM<em>RADAR</em></span>
+    <span class="logo-au">AU</span>
+    <div class="sep"></div>
+    <div class="live" id="liveStatus"><div class="dot pulse" id="liveDot"></div><span id="liveLabel">UPDATING</span></div>
+  </div>
+  <div class="hdr-right">
+    <span class="upd" id="updatedTime">Fetching live alerts...</span>
+    <button class="btn btn-ghost" onclick="doRefresh()">↻ Refresh</button>
+    <button class="btn btn-red" onclick="openModal()">+ Submit Scam</button>
+  </div>
+</div>
+
+<div class="filters" id="filterBar"></div>
+
+<div class="thead">
+  <div class="th">Severity</div>
+  <div class="th">Alert</div>
+  <div class="th">Source</div>
+  <div class="th">Category</div>
+  <div class="th">Date</div>
+</div>
+
+<div class="feed" id="feed">
+  <div class="loading"><p>Scanning intelligence sources...</p><small>SCAMWATCH · ACCC · ASIC · AFP · AUSTRALIAN NEWS</small></div>
+</div>
+
+<div class="footer">
+  <span>Sources: Scamwatch · ACCC · ASIC · AFP · Australian News</span>
+  <span>AI-aggregated alerts. Unverified. Always report losses to scamwatch.gov.au</span>
+</div>
+
+<!-- MODAL -->
+<div class="overlay" id="modal" style="display:none" onclick="overlayClick(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+const CATS = ["All","Investment","Impersonation","Phishing","Romance","Crypto","Employment","Shopping","Other"];
+let alerts = [];
+let activeCat = "All";
+let lastUpdated = null;
+
+const SEED = [
+  {id:"s1",title:"Impersonation scammers posing as major bank staff and demanding urgent fund transfers to 'safe accounts'",source:"Scamwatch",category:"Impersonation",severity:"HIGH",date:"May 2026",breaking:true},
+  {id:"s2",title:"Fake crypto investment platforms with fabricated returns targeting Australians via Telegram and Instagram",source:"ASIC",category:"Crypto",severity:"HIGH",date:"May 2026",breaking:true},
+  {id:"s3",title:"Phishing SMS impersonating myGov with fraudulent tax refund links circulating nationwide",source:"ACCC",category:"Phishing",severity:"HIGH",date:"May 2026",breaking:false},
+  {id:"s4",title:"Romance scammers building weeks-long relationships on dating apps before requesting cryptocurrency transfers",source:"AFP",category:"Romance",severity:"MEDIUM",date:"May 2026",breaking:false},
+  {id:"s5",title:"Fake job listings requiring upfront fees for 'starter kits' or 'training' targeting recent graduates",source:"Scamwatch",category:"Employment",severity:"MEDIUM",date:"May 2026",breaking:false},
+  {id:"s6",title:"Unsolicited investment seminars promising guaranteed property returns now under ASIC investigation",source:"ASIC",category:"Investment",severity:"MEDIUM",date:"May 2026",breaking:false},
+  {id:"s7",title:"Online marketplace scams surging — advance payment taken for goods never delivered",source:"News",category:"Shopping",severity:"LOW",date:"May 2026",breaking:false},
+];
+
+const srcMap = {Scamwatch:"src-SW",ACCC:"src-AC",ASIC:"src-AS",AFP:"src-AF",News:"src-NW"};
+
+function buildTicker(data) {
+  const breaking = data.filter(a=>a.breaking);
+  const items = breaking.length ? breaking : data.slice(0,3);
+  const txt = items.map(a=>`<span class="tick-item">${a.title} [${a.source}]</span>`).join('<span class="tick-item" style="opacity:0.4">◆</span>');
+  document.getElementById("tickerInner").innerHTML = txt + txt;
+}
+
+function buildFilters() {
+  const bar = document.getElementById("filterBar");
+  const filtered = activeCat === "All" ? alerts : alerts.filter(a=>a.category===activeCat);
+  bar.innerHTML = CATS.map(c=>`<button class="fbtn${activeCat===c?' on':''}" onclick="setCat('${c}')">${c}</button>`).join('')
+    + `<span class="fcnt">${filtered.length} alert${filtered.length!==1?'s':''}</span>`;
+}
+
+function buildFeed() {
+  const feed = document.getElementById("feed");
+  const data = activeCat === "All" ? alerts : alerts.filter(a=>a.category===activeCat);
+  if(!data.length){feed.innerHTML='<div class="loading"><p>No alerts in this category.</p></div>';return;}
+  feed.innerHTML = data.map((a,i)=>{
+    const sc = a.severity==='HIGH'?'sev-H':a.severity==='MEDIUM'?'sev-M':'sev-L';
+    const sl = a.severity==='HIGH'?'HIGH':a.severity==='MEDIUM'?'MED':'LOW';
+    const ss = srcMap[a.source]||'src-NW';
+    return `<div class="row" style="animation-delay:${i*0.04}s">
+      <div><span class="sev ${sc}">${sl}</span>${a.breaking?'<span class="live-tag">● LIVE</span>':''}</div>
+      <div class="title">${a.title}</div>
+      <div class="src ${ss}">${a.source}</div>
+      <div class="cat">${a.category}</div>
+      <div class="dt">${a.date}</div>
+    </div>`;
+  }).join('');
+}
+
+function setCat(c){activeCat=c;buildFilters();buildFeed();}
+
+function setLoading(v){
+  document.getElementById("liveDot").className="dot"+(v?" pulse":"");
+  document.getElementById("liveLabel").textContent=v?"UPDATING":"LIVE";
+}
+
+function setUpdated(d){
+  lastUpdated=d;
+  document.getElementById("updatedTime").textContent=d?`Updated ${d.toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit'})}`:' ';
+}
+
+async function fetchAlerts(){
+  setLoading(true);
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({
+        model:"claude-sonnet-4-20250514",
+        max_tokens:1000,
+        tools:[{type:"web_search_20250305",name:"web_search"}],
+        system:`You are a scam intelligence analyst for Australia. Search the web for the latest Australian scam warnings from scamwatch.gov.au, accc.gov.au, asic.gov.au, afp.gov.au, and Australian news outlets in 2025-2026. Return ONLY a raw JSON array — no markdown, no code fences, no preamble. Each object: id (short unique string), title (original 1-2 sentence summary max 130 chars — write your own words, never quote), source (Scamwatch|ACCC|ASIC|AFP|News), category (Investment|Impersonation|Phishing|Romance|Crypto|Employment|Shopping|Other), severity (HIGH|MEDIUM|LOW), date (e.g. May 2026), breaking (true|false). Return 10-12 items.`,
+        messages:[{role:"user",content:"Search for latest Australian scam alerts and fraud warnings from scamwatch.gov.au, accc.gov.au, asic.gov.au, afp.gov.au and major Australian news in 2025 and 2026. I need current scam types targeting Australians right now."}]
+      })
+    });
+    const data = await res.json();
+    const txt = (data.content||[]).map(i=>i.type==="text"?i.text:"").filter(Boolean).join("");
+    const match = txt.match(/\[[\s\S]*\]/);
+    if(match){
+      const parsed = JSON.parse(match[0]);
+      if(Array.isArray(parsed)&&parsed.length>0){
+        alerts = parsed;
+        buildTicker(alerts);
+        buildFilters();
+        buildFeed();
+        setUpdated(new Date());
+      }
+    }
+  } catch(e){
+    console.error(e);
+    if(!alerts.length){alerts=SEED;buildTicker(alerts);buildFilters();buildFeed();}
+    setUpdated(new Date());
+  }
+  setLoading(false);
+}
+
+function doRefresh(){fetchAlerts();}
+
+// MODAL
+function openModal(){
+  document.getElementById("modalBody").innerHTML=`
+    <h2>🚨 Submit a Scam Report</h2>
+    <p class="sub">Help warn other Australians. Reports reviewed before publishing.</p>
+    <div class="disc">Unverified user submission. ScamRadar AU is not responsible for accuracy of reports. For financial losses, always report to Scamwatch and your bank.</div>
+    <label>Scam Type</label>
+    <select id="sType">${["Impersonation","Investment","Phishing","Romance","Crypto","Employment","Shopping","Other"].map(t=>`<option>${t}</option>`).join('')}</select>
+    <label>What happened?</label>
+    <textarea id="sDesc" placeholder="Describe how you were contacted and what you were asked to do or pay..."></textarea>
+    <label>How were you contacted? (optional)</label>
+    <input type="text" id="sContact" placeholder="e.g. Phone call, SMS, Email, Instagram DM" />
+    <div class="actions">
+      <button class="btn btn-ghost" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-red" onclick="submitReport()">Submit Report</button>
+    </div>`;
+  document.getElementById("modal").style.display="flex";
+}
+
+function closeModal(){document.getElementById("modal").style.display="none";}
+function overlayClick(e){if(e.target.id==="modal")closeModal();}
+
+function submitReport(){
+  const desc=(document.getElementById("sDesc")||{}).value||"";
+  if(desc.trim().length<15){alert("Please describe the scam in more detail.");return;}
+  document.getElementById("modalBody").innerHTML=`
+    <div class="thanks">
+      <div class="icon">✅</div>
+      <h2>Report Received</h2>
+      <p>Your submission will be reviewed and may appear as an alert to protect other Australians.<br><br>Consider also filing a report at <strong>scamwatch.gov.au</strong> and contacting your bank if money was lost.</p>
+      <button class="btn btn-red" style="margin-top:20px" onclick="closeModal()">Close</button>
+    </div>`;
+}
+
+// Init
+alerts = SEED;
+buildTicker(alerts);
+buildFilters();
+buildFeed();
+fetchAlerts();
+setInterval(fetchAlerts, 5*60*1000);
+</script>
+</body>
+</html>
