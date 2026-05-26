@@ -171,6 +171,22 @@ let alerts = [];
 let activeCat = "All";
 let lastUpdated = null;
 
+function formatDate(dateStr) {
+  if (!dateStr) return "Unknown";
+  const d = new Date(dateStr);
+  if (!isNaN(d)) {
+    return d.toLocaleString("en-AU", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZone: "Australia/Sydney"
+    });
+  }
+  return dateStr;
+}
+
 const SEED = [];
 
 async function loadFromJSON() {
@@ -224,7 +240,7 @@ function buildFeed() {
       <div class="title">${a.title}</div>
       <div class="src ${ss}">${a.source}</div>
       <div class="cat">${a.category}</div>
-      <div class="dt">${a.date}</div>
+      <div class="dt">${formatDate(a.date)}</div>
     </div>`;
   }).join('');
 }
