@@ -6,7 +6,8 @@
     "category": "Impersonation",
     "severity": "HIGH",
     "date": "May 2026",
-    "breaking": true
+    "breaking": true,
+    "expires": "2026-05-27T23:59:00"
   },    
   {
     "id": "alert-001",
