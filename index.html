@@ -88,6 +88,7 @@ body { background: var(--bg); color: var(--text); font-family: var(--body); min-
 .src-AS { color: #7bbcf5; }
 .src-AF { color: var(--orange); }
 .src-NW { color: var(--text-mid); }
+.src-CM { color: #a78bfa; }
 .cat { font-family: var(--head); font-size: 11px; font-weight: 600; letter-spacing: 0.4px; color: var(--text-mid); text-transform: uppercase; }
 .dt { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
 
@@ -188,7 +189,7 @@ async function loadFromJSON() {
   }
 }
 
-const srcMap = {Scamwatch:"src-SW",ACCC:"src-AC",ASIC:"src-AS",AFP:"src-AF",News:"src-NW"};
+const srcMap = {Scamwatch:"src-SW",ACCC:"src-AC",ASIC:"src-AS",AFP:"src-AF",News:"src-NW",Community:"src-CM"};
 
 function buildTicker(data) {
   const breaking = data.filter(a=>a.breaking);
