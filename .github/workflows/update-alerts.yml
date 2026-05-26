@@ -32,9 +32,6 @@ jobs:
         run: |
           git config user.name "ScamRadar Bot"
           git config user.email "bot@scamradar.com.au"
-          git stash
-          git pull --rebase origin main
-          git stash pop
           git add content.json
           git diff --staged --quiet || git commit -m "Daily alert update $(date +'%Y-%m-%d')"
-          git push
+          git push origin main --force-with-lease
