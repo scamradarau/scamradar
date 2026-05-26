@@ -1,0 +1,34 @@
+name: Daily Scam Alert Update
+
+on:
+  schedule:
+    - cron: '0 22 * * *'  # Runs 8am AEST daily
+  workflow_dispatch:        # Lets you trigger it manually too
+
+jobs:
+  update-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Fetch scam alerts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python fetch_alerts.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "ScamRadar Bot"
+          git config user.email "bot@scamradar.com.au"
+          git add content.json
+          git diff --staged --quiet || git commit -m "Daily alert update $(date +'%Y-%m-%d')"
+          git push
