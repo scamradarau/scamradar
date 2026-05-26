@@ -170,16 +170,23 @@ let alerts = [];
 let activeCat = "All";
 let lastUpdated = null;
 
-const SEED = [
-  {id:"s1",title:"Impersonation scammers posing as major bank staff and demanding urgent fund transfers to 'safe accounts'",source:"Scamwatch",category:"Impersonation",severity:"HIGH",date:"May 2026",breaking:true},
-  {id:"s2",title:"Fake crypto investment platforms with fabricated returns targeting Australians via Telegram and Instagram",source:"ASIC",category:"Crypto",severity:"HIGH",date:"May 2026",breaking:true},
-  {id:"s3",title:"Phishing SMS impersonating myGov with fraudulent tax refund links circulating nationwide",source:"ACCC",category:"Phishing",severity:"HIGH",date:"May 2026",breaking:false},
-  {id:"s4",title:"Romance scammers building weeks-long relationships on dating apps before requesting cryptocurrency transfers",source:"AFP",category:"Romance",severity:"MEDIUM",date:"May 2026",breaking:false},
-  {id:"s5",title:"Fake job listings requiring upfront fees for 'starter kits' or 'training' targeting recent graduates",source:"Scamwatch",category:"Employment",severity:"MEDIUM",date:"May 2026",breaking:false},
-  {id:"s6",title:"Unsolicited investment seminars promising guaranteed property returns now under ASIC investigation",source:"ASIC",category:"Investment",severity:"MEDIUM",date:"May 2026",breaking:false},
-  {id:"s7",title:"Online marketplace scams surging — advance payment taken for goods never delivered",source:"News",category:"Shopping",severity:"LOW",date:"May 2026",breaking:false},
-  
-];
+const SEED = [];
+
+async function loadFromJSON() {
+  try {
+    const res = await fetch('/content.json');
+    const data = await res.json();
+    if (Array.isArray(data) && data.length > 0) {
+      alerts = data;
+      buildTicker(alerts);
+      buildFilters();
+      buildFeed();
+      setUpdated(new Date());
+    }
+  } catch(e) {
+    console.error('Could not load content.json', e);
+  }
+}
 
 const srcMap = {Scamwatch:"src-SW",ACCC:"src-AC",ASIC:"src-AS",AFP:"src-AF",News:"src-NW"};
 
@@ -346,8 +353,8 @@ alerts = SEED;
 buildTicker(alerts);
 buildFilters();
 buildFeed();
-fetchAlerts();
-setInterval(fetchAlerts, 5*60*1000);
+loadFromJSON();
+setInterval(loadFromJSON, 5*60*1000);
 </script>
 </body>
 </html>
