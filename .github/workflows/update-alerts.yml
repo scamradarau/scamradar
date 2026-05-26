@@ -2,18 +2,18 @@ name: Daily Scam Alert Update
 
 on:
   schedule:
-    - cron: '0 22 * * *'  # Runs 8am AEST daily
-  workflow_dispatch:        # Lets you trigger it manually too
+    - cron: '0 22 * * *'
+  workflow_dispatch:
 
 jobs:
   update-alerts:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
