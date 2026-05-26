@@ -285,16 +285,59 @@ function openModal(){
 function closeModal(){document.getElementById("modal").style.display="none";}
 function overlayClick(e){if(e.target.id==="modal")closeModal();}
 
-function submitReport(){
-  const desc=(document.getElementById("sDesc")||{}).value||"";
-  if(desc.trim().length<15){alert("Please describe the scam in more detail.");return;}
-  document.getElementById("modalBody").innerHTML=`
-    <div class="thanks">
-      <div class="icon">✅</div>
-      <h2>Report Received</h2>
-      <p>Your submission will be reviewed and may appear as an alert to protect other Australians.<br><br>Consider also filing a report at <strong>scamwatch.gov.au</strong> and contacting your bank if money was lost.</p>
-      <button class="btn btn-red" style="margin-top:20px" onclick="closeModal()">Close</button>
-    </div>`;
+async function submitReport(){
+  const desc = (document.getElementById("sDesc")||{}).value||"";
+  const type = (document.getElementById("sType")||{}).value||"";
+  const contact = (document.getElementById("sContact")||{}).value||"";
+
+  if(desc.trim().length < 15){
+    alert("Please describe the scam in more detail.");
+    return;
+  }
+
+  // Show sending state
+  document.querySelector(".actions").innerHTML = `
+    <span style="font-family:var(--mono);font-size:11px;color:var(--text-dim);animation:blink 1s infinite">
+      Sending report...
+    </span>`;
+
+  try {
+    const res = await fetch("https://formspree.io/f/maqkplgy", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        scam_type: type,
+        description: desc,
+        contact_method: contact,
+        submitted_at: new Date().toLocaleString("en-AU", {timeZone:"Australia/Sydney"}),
+        source: "scamradar.com.au"
+      })
+    });
+
+    if(res.ok){
+      document.getElementById("modalBody").innerHTML=`
+        <div class="thanks">
+          <div class="icon">✅</div>
+          <h2>Report Received</h2>
+          <p>Your submission has been logged and will be reviewed.<br><br>
+          Consider also filing a report at <strong>scamwatch.gov.au</strong> 
+          and contacting your bank if money was lost.</p>
+          <button class="btn btn-red" style="margin-top:20px" onclick="closeModal()">Close</button>
+        </div>`;
+    } else {
+      throw new Error("Submission failed");
+    }
+
+  } catch(e){
+    document.getElementById("modalBody").innerHTML += `
+      <p style="color:var(--red);font-family:var(--mono);font-size:11px;margin-top:12px">
+        ⚠ Submission failed. Please try again or email us directly.
+      </p>`;
+    // Re-add submit button
+    document.querySelector(".actions").innerHTML=`
+      <button class="btn btn-ghost" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-red" onclick="submitReport()">Try Again</button>`;
+  }
 }
 
 // Init
