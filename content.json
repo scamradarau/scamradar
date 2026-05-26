@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "id": "alert-001",
+    "title": "ASIC warns of fake crypto trading platforms promoted through WhatsApp and social media groups targeting young Australians.",
+    "source": "ASIC",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "May 2026",
+    "breaking": true
+  },
+  {
+    "id": "alert-002",
+    "title": "Australians lost $2.18 billion to scams in 2025 with investment scams leading at $837.7 million, per ACCC Targeting Scams Report.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-003",
+    "title": "AFP and JPC3 warn of bank impersonation scams using cloned hold music and tag-team calls to bypass security checks.",
+    "source": "AFP",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-004",
+    "title": "Scamwatch and ACMA issue joint alert on mobile phone fraud where criminals take control of phone numbers to access accounts.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-005",
+    "title": "ASIC removed nearly 12,000 AI-powered investment scam websites in 2025, a 90% increase from the previous year.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-006",
+    "title": "ATO and ASIC warn of SMSF scams luring Australians into illegal early superannuation access through fake schemes.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-007",
+    "title": "AFP warns scammers impersonate police using fake ReportCyber reports to steal cryptocurrency wallet seed phrases.",
+    "source": "AFP",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-008",
+    "title": "Romance scam losses rose 21.8% in 2025 to $28.6 million, with over 80% of contact occurring via social media and dating apps.",
+    "source": "ACCC",
+    "category": "Romance",
+    "severity": "MEDIUM",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-009",
+    "title": "Victorian man sentenced for bulk phone porting scam that stole mobile numbers to access victims' bank accounts.",
+    "source": "AFP",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-010",
+    "title": "CommBank warns of fraudulent letters impersonating ASIC requesting fund transfers to fake 'secure accounts'.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-011",
+    "title": "ACCC flagged massive mortgage fraud with billions in loans secured using AI-generated synthetic documents.",
+    "source": "ACCC",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "May 2026",
+    "breaking": false
+  },
+  {
+    "id": "alert-012",
+    "title": "Global data breach affects 200 million via Canvas platform including Australian schools, universities and TAFEs.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "May 2026",
+    "breaking": true
+  }
+]
