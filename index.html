@@ -195,12 +195,12 @@ async function loadFromJSON() {
     const data = await res.json();
 if (Array.isArray(data) && data.length > 0) {
   const now = new Date();
-  alerts = data.filter(a => {
-    if (a.source === "Community" && a.expires) {
-      return new Date(a.expires) > now;
-    }
-    return true;
-  });
+    alerts = data.filter(a => {
+      if (a.source === "Community" && a.expires) {
+        return new Date(a.expires) > now;
+      }
+      return true;
+    }).sort((a, b) => new Date(b.date) - new Date(a.date));
       buildTicker(alerts);
       buildFilters();
       buildFeed();
