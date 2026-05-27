@@ -1,14 +1,5 @@
 [
-  {
-    "id": "u1",
-    "title": "Victim loses $20,000 to ubank impersonator \u2014 scammer posed as fraud team citing unauthorised transaction, obtained card details and OTP codes by phone to drain account.",
-    "source": "Community",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2026-05-26T15:30:00",
-    "breaking": true,
-    "expires": "2026-05-27T23:59:00"
-  },
+
   {
     "id": "asic-crypto-platforms-05-25-2026",
     "title": "Fake crypto trading platforms targeting Gen Z via WhatsApp and messaging apps",
