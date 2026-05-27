@@ -3,6 +3,7 @@ name: Daily Scam Alert Update
 on:
   schedule:
     - cron: '0 22 * * *'
+    - cron: '0 1 * * *'    # 11am AEST backup
   workflow_dispatch:
 
 permissions:
