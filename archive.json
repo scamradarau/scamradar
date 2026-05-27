@@ -249,5 +249,125 @@
     "date": "2026-05-25T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "ASIC-CRYPTO-20260527",
+    "title": "Fake crypto trading platforms targeting Australians through messaging app investment groups, with fabricated dashboards and fake data. Scammers lure victims and charge unlocking fees.",
+    "source": "ASIC",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-05-26T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "SCAMWATCH-BONDS-20260519",
+    "title": "Criminals impersonating legitimate businesses offering fake investment bonds with promised high returns and government protection claims. ASIC has taken down multiple fake websites.",
+    "source": "Scamwatch",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "ACCC-QANTAS-20260210",
+    "title": "Scammers impersonating Qantas via SMS and emails to steal personal information and money using fake refund and loyalty points offers.",
+    "source": "ACCC",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-02-10T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "SCAMWATCH-MOBILE-20260407",
+    "title": "Mobile fraud scam where criminals gain control of phone numbers to receive verification codes and access financial accounts and services.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-04-07T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "ACCC-ACCC-SPOOF-20250623",
+    "title": "Scammers spoofing ACCC phone numbers to impersonate agency representatives and request sensitive personal and financial information.",
+    "source": "ACCC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2025-06-23T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "ASIC-SMSF-20260519",
+    "title": "Scammers targeting Australians via social media and cold calls to establish fake self-managed super funds to access retirement savings illegally.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "ASIC-AI-SCAMS-20260408",
+    "title": "ASIC removing record numbers of scam websites and warns of AI-powered investment scams with fake endorsements and trading bots claiming impossible returns.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-08T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "AUSPOST-DELIVERY-20260522",
+    "title": "Delivery scams impersonating Australia Post asking recipients to confirm details for failed deliveries using fake tracking numbers.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-05-22T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "ATO-CRYPTO-20260223",
+    "title": "ATO impersonation scam emails demanding immediate disclosure of cryptocurrency holdings or threatening arrest, using false urgency tactics.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-02-23T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "POLICE-IMPERSONATION-20260520",
+    "title": "Criminals impersonating Australian Federal Police creating fake ReportCyber reports using people's names and emails.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-05-20T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "ASIC-SUPER-FAKE-SITES-20260519",
+    "title": "Scammers creating fake ASIC websites mimicking official pages to harvest personal and banking information from unsuspecting users.",
+    "source": "ASIC",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "ANZ-ADVISOR-SCAM-20260527",
+    "title": "Callers impersonating ANZ send fake verification emails with codes to create false legitimacy before attempting unauthorized account transfers.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-27T23:06:53.725590"
   }
 ]
