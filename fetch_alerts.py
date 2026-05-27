@@ -11,6 +11,31 @@ except:
     existing = []
 
 now = datetime.now()
+
+# Archive expiring community alerts before removing them
+expiring_community = [
+    a for a in existing
+    if a.get('source') == 'Community' and a.get('expires')
+    and datetime.fromisoformat(a['expires']) < now
+]
+
+if expiring_community:
+    try:
+        with open('archive.json', 'r') as f:
+            archive_early = json.load(f)
+    except:
+        archive_early = []
+    seen_early = {a.get('title') for a in archive_early}
+    for a in expiring_community:
+        if a.get('title') not in seen_early:
+            entry = dict(a)
+            entry['first_seen'] = a.get('date', now.isoformat())
+            archive_early.append(entry)
+    with open('archive.json', 'w') as f:
+        json.dump(archive_early, f, indent=2)
+    print(f"✅ Archived {len(expiring_community)} expiring community alert(s)")
+
+# Now remove expired community alerts from the live feed
 existing = [
     a for a in existing
     if not (
