@@ -59,27 +59,6 @@ if match:
         json.dump(final_alerts, f, indent=2)
     print(f"✅ content.json updated with {len(final_alerts)} alerts")
 
-    # --- ARCHIVE ---
-    try:
-        with open('archive.json', 'r') as f:
-            archive = json.load(f)
-    except:
-        archive = []
-
-    seen_titles = {a.get('title') for a in archive}
-    today_iso = datetime.now().isoformat()
-
-    for alert in final_alerts:
-        if alert.get('title') not in seen_titles:
-            entry = dict(alert)
-            entry['first_seen'] = today_iso
-            archive.append(entry)
-            seen_titles.add(alert.get('title'))
-
-    with open('content.json', 'w') as f:
-        json.dump(final_alerts, f, indent=2)
-    print(f"✅ content.json updated with {len(final_alerts)} alerts")
-
     # --- ARCHIVE: keep a growing history of every alert ---
     try:
         with open('archive.json', 'r') as f:
