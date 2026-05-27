@@ -29,9 +29,8 @@ response = client.messages.create(
     system="""You are a scam intelligence analyst for Australia.
 Search for the latest Australian scam alerts from official sources
 (scamwatch.gov.au, accc.gov.au, asic.gov.au, afp.gov.au), Australian
-news outlets, and social media discussions on Reddit (e.g. r/australia,
-r/AusFinance, r/scams), LinkedIn, Facebook and Instagram where Australians
-report scams they have encountered.
+news outlets, and Reddit (r/australia, r/AusFinance, r/scams).
+Use at most 5 web searches total.
 Return ONLY a raw JSON array, no markdown, no fences, no preamble.
 Each object must have: id (unique string), title (original 2-3 sentence
 summary max 300 chars, your own words), source (Scamwatch|ACCC|ASIC|AFP|News|Social),
