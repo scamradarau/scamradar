@@ -10,8 +10,8 @@
     "expires": "2026-05-27T23:59:00"
   },
   {
-    "id": "scam-2026-05-001",
-    "title": "ASIC and ACCC warn of fake crypto trading platforms on WhatsApp and Telegram groups stealing investor funds.",
+    "id": "asic-crypto-platforms-05-25-2026",
+    "title": "Fake crypto trading platforms targeting Gen Z via WhatsApp and messaging apps",
     "source": "ASIC",
     "category": "Crypto",
     "severity": "HIGH",
@@ -19,102 +19,102 @@
     "breaking": true
   },
   {
-    "id": "scam-2026-05-002",
-    "title": "Victorian man jailed for bulk phone porting scam that hijacked victims' mobile numbers to access bank accounts.",
-    "source": "AFP",
-    "category": "Phishing",
-    "severity": "HIGH",
-    "date": "2026-05-18T14:30:00",
-    "breaking": false
-  },
-  {
-    "id": "scam-2026-05-003",
-    "title": "ATO and ASIC issue warning about SMSF scams tricking Australians into illegal early superannuation access.",
-    "source": "ASIC",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-05-19T09:00:00",
-    "breaking": true
-  },
-  {
-    "id": "scam-2026-05-004",
-    "title": "Scammers impersonate Amazon and YouTube via SMS offering fake work-from-home jobs to steal personal data.",
-    "source": "Scamwatch",
-    "category": "Employment",
-    "severity": "MEDIUM",
-    "date": "2026-05-24T11:00:00",
-    "breaking": false
-  },
-  {
-    "id": "scam-2026-05-005",
-    "title": "Cybercrime Squad charges trio who allegedly used scam proceeds to purchase gold bullion in money laundering scheme.",
-    "source": "AFP",
-    "category": "Other",
-    "severity": "HIGH",
-    "date": "2026-05-15T16:00:00",
-    "breaking": false
-  },
-  {
-    "id": "scam-2026-05-006",
-    "title": "Fraudulent ASIC letters claiming bank staff are under investigation trick victims into transferring funds.",
-    "source": "News",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2026-05-20T08:30:00",
-    "breaking": false
-  },
-  {
-    "id": "scam-2026-05-007",
-    "title": "2025 Targeting Scams Report reveals Australians lost $2.18 billion across 481,523 scam reports last year.",
-    "source": "ACCC",
-    "category": "Other",
-    "severity": "HIGH",
-    "date": "2026-05-25T09:00:00",
-    "breaking": true
-  },
-  {
-    "id": "scam-2026-05-008",
-    "title": "Criminals impersonate AFP officers using fake ReportCyber reports to steal cryptocurrency and seed phrases.",
+    "id": "scamwatch-mobile-fraud-04-07-2026",
+    "title": "Mobile number fraud scam with unauthorized phone account takeovers",
     "source": "Scamwatch",
     "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2026-05-22T13:00:00",
-    "breaking": false
-  },
-  {
-    "id": "scam-2026-05-009",
-    "title": "ASIC removes record 11,964 scam websites in 2025, warns AI is supercharging investment scam threats.",
-    "source": "ASIC",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-04-08T10:00:00",
-    "breaking": false
-  },
-  {
-    "id": "scam-2026-05-010",
-    "title": "Scamwatch and ACMA issue joint alert on mobile phone fraud as criminals hijack numbers to bypass security.",
-    "source": "Scamwatch",
-    "category": "Phishing",
     "severity": "HIGH",
     "date": "2026-04-07T12:00:00",
     "breaking": false
   },
   {
-    "id": "scam-2026-05-011",
-    "title": "ASIC warns finfluencers providing unlicensed financial advice face five years imprisonment and million-dollar fines.",
-    "source": "ASIC",
+    "id": "scamwatch-investment-bonds-05-19-2026",
+    "title": "Criminals impersonating businesses to sell fake investment bonds with false returns",
+    "source": "Scamwatch",
     "category": "Investment",
-    "severity": "MEDIUM",
-    "date": "2026-04-24T14:00:00",
+    "severity": "HIGH",
+    "date": "2026-05-19T14:30:00",
     "breaking": false
   },
   {
-    "id": "scam-2026-05-012",
-    "title": "PALM scheme seasonal workers targeted by loan scam where fraudsters steal funds after gaining banking access.",
-    "source": "News",
-    "category": "Other",
+    "id": "scamwatch-qantas-impersonation-02-09-2026",
+    "title": "Qantas impersonation scam with fake refund and points expiry messages",
+    "source": "Scamwatch",
+    "category": "Impersonation",
     "severity": "MEDIUM",
-    "date": "2026-05-10T15:00:00",
+    "date": "2026-02-09T09:00:00",
+    "breaking": false
+  },
+  {
+    "id": "asic-super-switching-scam-05-26-2026",
+    "title": "Cold-calling scams pressuring Australians into risky superannuation switches",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-26T11:15:00",
+    "breaking": true
+  },
+  {
+    "id": "asic-fake-websites-05-26-2026",
+    "title": "Scammers creating fake ASIC and moneysmart websites to harvest personal data",
+    "source": "ASIC",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-05-26T13:45:00",
+    "breaking": true
+  },
+  {
+    "id": "commbank-asic-fake-letters-05-15-2026",
+    "title": "Fraudulent letters impersonating ASIC claiming bank staff under investigation",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-05-15T10:30:00",
+    "breaking": false
+  },
+  {
+    "id": "auspost-delivery-scam-05-22-2026",
+    "title": "Fake parcel delivery scams requesting personal details with phishing links",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-05-22T08:00:00",
+    "breaking": false
+  },
+  {
+    "id": "asic-ai-investment-scams-04-08-2026",
+    "title": "AI-powered investment scams with deepfakes increasing; ASIC removing 11,964 websites",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-08T15:20:00",
+    "breaking": false
+  },
+  {
+    "id": "commbank-seasonal-worker-loans-05-20-2026",
+    "title": "Scammers targeting PALM scheme workers with fake loan assistance offers",
+    "source": "News",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-05-20T14:00:00",
+    "breaking": false
+  },
+  {
+    "id": "accc-annual-losses-03-30-2026",
+    "title": "Australians lost $2.18 billion to scams in 2025 across 481,523 reports",
+    "source": "ACCC",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "2026-03-30T16:00:00",
+    "breaking": false
+  },
+  {
+    "id": "nab-celebrity-impersonation-05-26-2026",
+    "title": "Criminals impersonating high-profile figures on social media and WhatsApp",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-05-26T09:30:00",
     "breaking": false
   }
 ]
