@@ -118,5 +118,136 @@
     "date": "2026-05-15T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-05-27T12:24:14.531954"
+  },
+  {
+    "id": "u2",
+    "title": "Community report: scammers impersonating a major telco calling about a 'compromised NBN connection', requesting remote access to the victim's computer to 'fix' it.",
+    "source": "Community",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-05-27T23:16:00",
+    "breaking": true,
+    "expires": "2026-05-28T08:00:00",
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-001",
+    "title": "Fake crypto platforms target investors through messaging apps and social media. Scammers create convincing fake trading dashboards with no real trading occurring, then request release fees for withdrawals.",
+    "source": "ASIC",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-002",
+    "title": "Mobile number hijacking scam where criminals take control of phone accounts to receive verification codes and reset passwords, gaining access to financial services and accounts.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-003",
+    "title": "Scammers impersonate government agencies like ACCC using spoofed phone numbers to request personal information including passwords and bank details, claiming urgent refunds or penalties.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-004",
+    "title": "AI-powered voice and video cloning scams enable fraudsters to impersonate family members and celebrities in emergencies to extract money, or create deepfake investment endorsements.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-005",
+    "title": "Scammers pose as loan assistance providers to seasonal workers, targeting those in PALM scheme. They gain banking access under guise of loan application fees then steal deposited funds.",
+    "source": "News",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-006",
+    "title": "ACMA impersonation phishing emails redirect users to fake data breach pages requesting financial institution selection to harvest credentials and steal banking information.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-007",
+    "title": "Illegal early access to superannuation scams exploit SMSF structures. Scammers target users via social media and cold calls, charging large fees while enabling premature fund withdrawals.",
+    "source": "News",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-008",
+    "title": "Australia Post delivery scams use fake tracking numbers and urgent language claiming parcels cannot be delivered. Users directed to fake websites requesting personal and credit card details.",
+    "source": "News",
+    "category": "Shopping",
+    "severity": "MEDIUM",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-009",
+    "title": "Fraudulent lottery and prize draw scams exploit social media age restriction confusion introduced December 2025. Criminals pressure users to verify age details through fake websites.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-010",
+    "title": "Counterfeit event ticket scams sell fake concert and festival tickets via Facebook and social media. Some events advertised do not exist or have secret location reveals before purchase.",
+    "source": "News",
+    "category": "Shopping",
+    "severity": "MEDIUM",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-011",
+    "title": "AI-enhanced phishing emails impersonating trusted companies mimic legitimate branding. Generative AI overcomes traditional detection methods by eliminating spelling errors and linguistic inconsistencies.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T13:20:47.023079"
+  },
+  {
+    "id": "SC-2026-05-27-012",
+    "title": "2025 data shows investment scams topped losses at $837.7 million; payment redirection scams at $166.8 million; and romance scams at $139.9 million. Top five categories accounted for 60% of total losses.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-25T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-27T13:20:47.023079"
   }
 ]
