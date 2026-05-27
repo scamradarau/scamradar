@@ -230,7 +230,12 @@ textarea { resize: vertical; min-height: 120px; }
       
     </div>
   </div>
-
+  <!-- ARCHIVE SCREEN -->
+  <div class="screen" id="screen-archive">
+    <div style="padding:16px 16px 40px" id="archiveWrap">
+      <div class="loading"><p>Loading archive...</p></div>
+    </div>
+  </div>
   <!-- TAB BAR -->
   <nav class="tabbar">
     <button class="tab on" data-screen="feed" onclick="switchTab('feed')">
@@ -325,6 +330,45 @@ function switchTab(screen) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById('screen-' + screen).classList.add('active');
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t.dataset.screen === screen));
+  if (screen === 'archive') loadArchive();
+}
+
+async function loadArchive() {
+  const wrap = document.getElementById('archiveWrap');
+  try {
+    const res = await fetch('https://raw.githubusercontent.com/scamradarau/scamradar/main/archive.json');
+    const data = await res.json();
+    if (!Array.isArray(data) || !data.length) {
+      wrap.innerHTML = '<div class="loading"><p>No archived alerts yet.</p></div>';
+      return;
+    }
+    data.sort((a,b) => new Date(b.first_seen||b.date) - new Date(a.first_seen||a.date));
+    const cutoff = new Date(); cutoff.setDate(cutoff.getDate() - 7);
+    const groups = {};
+    data.forEach(a => {
+      const d = new Date(a.first_seen||a.date);
+      if (d < cutoff) return;
+      const key = d.toLocaleDateString('en-AU',{day:'numeric',month:'long',year:'numeric'});
+      (groups[key] = groups[key] || []).push(a);
+    });
+    let html = '';
+    for (const date in groups) {
+      html += `<div style="font-family:var(--mono);font-size:11px;color:var(--text-mid);text-align:center;margin:18px 0 10px;letter-spacing:1px">── ${date} ──</div>`;
+      html += groups[date].map(a => {
+        const sc = a.severity==='HIGH'?'sev-H':a.severity==='MEDIUM'?'sev-M':'sev-L';
+        const sl = a.severity==='HIGH'?'HIGH':a.severity==='MEDIUM'?'MED':'LOW';
+        const ss = srcMap[a.source]||'src-NW';
+        return `<div class="card" style="margin-bottom:10px">
+          <div class="card-top"><div class="card-left"><span class="sev ${sc}">${sl}</span></div><span class="src ${ss}">${a.source}</span></div>
+          <div class="card-title">${a.title}</div>
+          <div class="card-bottom"><span class="cat">${a.category}</span></div>
+        </div>`;
+      }).join('');
+    }
+    wrap.innerHTML = html;
+  } catch(e) {
+    wrap.innerHTML = '<div class="loading"><p>Could not load archive.</p></div>';
+  }
 }
 
 // SUBMIT
