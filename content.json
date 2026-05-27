@@ -1,110 +1,110 @@
 [
   {
-    "id": "aus-scam-001",
-    "title": "Scammers impersonate police and create fake ReportCyber reports to steal cryptocurrency. Victims receive calls from fake AFP officers citing data breaches, then request seed phrases or transfers.",
-    "source": "AFP",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2026-02-18T09:00:00",
-    "breaking": true
-  },
-  {
-    "id": "aus-scam-002",
-    "title": "ACMA and National Anti-Scam Centre warn of mobile fraud where criminals take control of phone numbers or make unauthorised account changes to access banking and verification codes.",
-    "source": "Scamwatch",
-    "category": "Phishing",
-    "severity": "HIGH",
-    "date": "2026-04-07T10:00:00",
-    "breaking": true
-  },
-  {
-    "id": "aus-scam-003",
-    "title": "Investment bonds scam impersonating real businesses offering fake environmental bonds with returns up to 9%. Recent case involved fake websites impersonating a major retailer.",
-    "source": "Scamwatch",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-05-19T14:30:00",
-    "breaking": true
-  },
-  {
-    "id": "aus-scam-004",
-    "title": "ASIC and ACCC warn of fake crypto trading platforms promoted via messaging apps and social media. Scammers join share trading groups, show fake profits, then request release fees.",
+    "id": "SCM-2026-001",
+    "title": "Fake crypto trading platforms target Australians through WhatsApp and social media groups. Scammers pose as traders in share tip groups, directing victims to fake platforms showing false profits.",
     "source": "ASIC",
     "category": "Crypto",
     "severity": "HIGH",
-    "date": "2026-05-25T11:00:00",
+    "date": "2026-05-26T10:00:00",
     "breaking": true
   },
   {
-    "id": "aus-scam-005",
-    "title": "Bank impersonation scams increasingly sophisticated with scammers replicating hold music and conducting tag-team calls. One victim lost $350,000 in crypto in 18 hours.",
-    "source": "AFP",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2026-03-31T13:00:00",
-    "breaking": true
-  },
-  {
-    "id": "aus-scam-006",
-    "title": "ASIC removed 11,964 phishing and investment scam websites in 2025, averaging 32 per day. AI-powered scams using deepfakes of celebrities are surging on social media platforms.",
-    "source": "ASIC",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-04-08T10:30:00",
-    "breaking": true
-  },
-  {
-    "id": "aus-scam-007",
-    "title": "Employment scams targeting job seekers via social media offering easy remote work. Criminals impersonate recruiters, request upfront payments for training, then steal identities.",
-    "source": "Scamwatch",
-    "category": "Employment",
-    "severity": "MEDIUM",
-    "date": "2026-05-20T09:00:00",
-    "breaking": false
-  },
-  {
-    "id": "aus-scam-008",
-    "title": "ATO and ASIC warn of SMSF early access scams via social media and cold calls. Promoters charge large fees to help people illegally access retirement savings before eligibility.",
-    "source": "ASIC",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-05-19T15:00:00",
-    "breaking": true
-  },
-  {
-    "id": "aus-scam-009",
-    "title": "AI voice cloning scams allow criminals to impersonate family members in emergency calls after recording just seconds of conversation from unknown callers asking basic questions.",
+    "id": "SCM-2026-002",
+    "title": "Fraudulent letters using official branding claim bank staff are under investigation and instruct recipients to transfer funds to a secure account for asset protection.",
     "source": "News",
     "category": "Impersonation",
-    "severity": "MEDIUM",
-    "date": "2026-05-25T08:00:00",
-    "breaking": true
-  },
-  {
-    "id": "aus-scam-010",
-    "title": "Scammers exploit social media age ban confusion by posing as platforms requesting ID verification or offering fake age-verified accounts. No legitimate platform requests ID via text.",
-    "source": "ACCC",
-    "category": "Phishing",
-    "severity": "MEDIUM",
-    "date": "2026-03-12T11:30:00",
+    "severity": "HIGH",
+    "date": "2026-04-14T08:00:00",
     "breaking": false
   },
   {
-    "id": "aus-scam-011",
-    "title": "Australians lost $2.18 billion to scams in 2025, with investment scams accounting for $837.7 million. Losses increased 7.8% despite stabilized report volumes, showing higher effectiveness.",
-    "source": "ACCC",
+    "id": "SCM-2026-003",
+    "title": "Mobile fraud alert issued by regulator and anti-scam centre. Criminals commit fraud by taking control of mobile numbers or making unauthorised account changes to access banking systems.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-04-07T09:00:00",
+    "breaking": false
+  },
+  {
+    "id": "SCM-2026-004",
+    "title": "Investment bond scams impersonate well-known retailers offering environmental bonds with returns up to 9%. Fake websites use legitimate company branding to steal funds and personal data.",
+    "source": "Scamwatch",
     "category": "Investment",
     "severity": "HIGH",
-    "date": "2026-03-30T12:00:00",
+    "date": "2026-05-19T12:00:00",
     "breaking": false
   },
   {
-    "id": "aus-scam-012",
-    "title": "Victorian man sentenced to over 2 years for bulk phone porting scam targeting victims' mobile numbers to access banking and cryptocurrency accounts through identity theft.",
+    "id": "SCM-2026-005",
+    "title": "Criminals impersonate police officers creating fake crime reports using victims' personal information. Scammers request cryptocurrency transfers claiming accounts are compromised in data breaches.",
+    "source": "AFP",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-02-18T14:00:00",
+    "breaking": false
+  },
+  {
+    "id": "SCM-2026-006",
+    "title": "Construction sector targeted by business email compromise scams. Criminals impersonate suppliers via email to redirect legitimate payments to fraudulent accounts with high-value transactions.",
     "source": "AFP",
     "category": "Phishing",
     "severity": "MEDIUM",
-    "date": "2026-05-18T14:00:00",
+    "date": "2025-10-28T11:00:00",
+    "breaking": false
+  },
+  {
+    "id": "SCM-2026-007",
+    "title": "Airline impersonation scams use fake emails and texts claiming refunds, gifts, or expiring points. Messages create urgency and direct victims to phishing websites to steal information.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-02-09T10:00:00",
+    "breaking": false
+  },
+  {
+    "id": "SCM-2026-008",
+    "title": "Social media age restriction exploited in new scams. Messages claim accounts will be suspended or fines issued unless age details are verified through fake websites collecting credentials.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-03-12T13:00:00",
+    "breaking": false
+  },
+  {
+    "id": "SCM-2026-009",
+    "title": "Messaging platform scams use fake billing alerts through guest invitations. Notifications appear from legitimate addresses, bypassing security filters with phone numbers embedded in group names.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-03-19T09:00:00",
+    "breaking": false
+  },
+  {
+    "id": "SCM-2026-010",
+    "title": "Regulator reports over 14,000 investment scam websites taken down. AI washing tactics promise passive income, with scammers using templates, fake corporate documents, and celebrity deepfakes.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2025-06-15T08:00:00",
+    "breaking": false
+  },
+  {
+    "id": "SCM-2026-011",
+    "title": "Annual report reveals Australians lost $2.18 billion to scams in 2025. Investment scams account for $837.7 million, with losses increasing 7.8% despite stable report volumes.",
+    "source": "ACCC",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "2026-03-30T10:00:00",
+    "breaking": false
+  },
+  {
+    "id": "SCM-2026-012",
+    "title": "Fake online stores proliferate on social platforms with too-good-to-be-true prices. Sites steal payment details or send counterfeit goods, targeting shoppers through sponsored advertisements.",
+    "source": "Social",
+    "category": "Shopping",
+    "severity": "MEDIUM",
+    "date": "2026-05-06T15:00:00",
     "breaking": false
   }
 ]
