@@ -1,110 +1,110 @@
 [
   {
-    "id": "alert-crypto-whatsapp-2026-05-26",
-    "title": "Crypto scams targeting Gen Z through WhatsApp and social media, using fake trading platforms to extract money via fake release fees.",
-    "source": "ASIC",
-    "category": "Crypto",
+    "id": "SW-20260519-001",
+    "title": "Investment bonds scam targeting Australians with false high-return promises",
+    "source": "Scamwatch",
+    "category": "Investment",
     "severity": "HIGH",
-    "date": "2026-05-26T08:00:00Z",
+    "date": "2026-05-19T00:00:00Z",
     "breaking": true
   },
   {
-    "id": "alert-ai-investment-scams-2026-04-08",
-    "title": "ASIC warns of AI-powered investment scams proliferating on social media with deepfake celebrity endorsements and fake trading bots promising passive income.",
+    "id": "ASIC-20260525-001",
+    "title": "Fake crypto trading platforms luring investors via WhatsApp and social media groups with no real trading",
+    "source": "ASIC",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-05-25T00:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "SW-20260407-001",
+    "title": "Mobile number fraud allowing unauthorized account takeover and access to banking services",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-04-07T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "SW-20260305-001",
+    "title": "Romance scams using emotional manipulation to request money and investments from victims",
+    "source": "Scamwatch",
+    "category": "Romance",
+    "severity": "HIGH",
+    "date": "2026-03-05T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "ACCC-20260210-001",
+    "title": "Qantas impersonation scam via email and SMS offering fake rewards and refunds",
+    "source": "ACCC",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-02-10T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "NASC-20260625-001",
+    "title": "Spoofed ACCC phone numbers used by scammers impersonating officials requesting personal information",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2025-06-23T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "ATO-20260519-001",
+    "title": "Self-managed super fund scams encouraging illegal early access to retirement savings with promised tax breaks",
     "source": "ASIC",
     "category": "Investment",
     "severity": "HIGH",
-    "date": "2026-04-08T10:30:00Z",
-    "breaking": false
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": true
   },
   {
-    "id": "alert-smsf-early-access-2026-05-19",
-    "title": "ATO and ASIC warn of superannuation scams targeting Australians through social media and cold calls offering illegal early SMSF access.",
-    "source": "ACCC",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-05-19T09:15:00Z",
-    "breaking": false
-  },
-  {
-    "id": "alert-accc-impersonation-2025-06-23",
-    "title": "Scammers impersonating ACCC and NASC by spoofing official phone numbers to request personal information and financial details from unsuspecting Australians.",
-    "source": "Scamwatch",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2025-06-23T11:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "alert-qantas-phishing-2026-02-09",
-    "title": "Spike in Qantas phishing scams via email and SMS creating urgency to claim refunds or redeem points, using official branding and logos.",
-    "source": "Scamwatch",
-    "category": "Phishing",
-    "severity": "HIGH",
-    "date": "2026-02-09T14:20:00Z",
-    "breaking": false
-  },
-  {
-    "id": "alert-australia-post-delivery-2026-05-22",
-    "title": "Australia Post phishing scams via SMS asking recipients to confirm delivery details after failed delivery, with fake tracking numbers embedded.",
-    "source": "News",
-    "category": "Phishing",
-    "severity": "MEDIUM",
-    "date": "2026-05-22T10:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "alert-deepfake-voice-scams-2026-03-06",
-    "title": "Australians targeted by voice-cloning and deepfake video scams, with AI-generated celebrity endorsements and fake family emergency calls circulating.",
+    "id": "NEWS-20260521-001",
+    "title": "AI voice cloning scams with deepfakes impersonating family members requesting emergency cash transfers",
     "source": "News",
     "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2026-03-06T15:45:00Z",
-    "breaking": false
+    "date": "2026-05-21T00:00:00Z",
+    "breaking": true
   },
   {
-    "id": "alert-family-impersonation-whatsapp-2026-05-20",
-    "title": "Family impersonation scams where fraudsters pose as relatives requesting urgent cash via WhatsApp or SMS, with voice cloning technology used.",
-    "source": "News",
-    "category": "Romance",
-    "severity": "MEDIUM",
-    "date": "2026-05-20T12:30:00Z",
-    "breaking": false
-  },
-  {
-    "id": "alert-annual-targeting-report-2026-03-30",
-    "title": "National Anti-Scam Centre reports $2.18 billion lost to scams in 2025 across 481k reports, with investment and phishing scams dominating losses.",
-    "source": "ACCC",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-03-30T08:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "alert-betting-sports-investment-2026-05-30",
-    "title": "Betting and sports investment scams tripled losses to $2.4 million in 2025, with rising reports particularly among younger age groups and First Nations people.",
-    "source": "ACCC",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-05-30T07:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "alert-invoice-redirection-2026-05-28",
-    "title": "Business invoice scams where criminals intercept emails and redirect payments to fraudulent accounts after altering supplier invoice details.",
+    "id": "NEWS-20260507-001",
+    "title": "Fraudulent chargeback scheme targeting small businesses claiming damaged items or non-delivery",
     "source": "News",
     "category": "Shopping",
     "severity": "MEDIUM",
-    "date": "2026-05-28T11:20:00Z",
+    "date": "2026-05-07T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "alert-stolen-shares-identity-2026-05-25",
-    "title": "Identity theft scams targeting share portfolios, with criminals using stolen ID documents to create fraudulent trading accounts and sell victim shares.",
+    "id": "NEWS-20260512-001",
+    "title": "Microsoft Teams billing alert scam using guest invitations with fake subscription charge warnings",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-05-12T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "ANZ-20260527-001",
+    "title": "Fake ANZ verification emails accompanying scam calls requesting banking and personal information",
     "source": "News",
     "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "AUSTRAC-20260515-001",
+    "title": "Money laundering threats using cryptocurrency and digital channels to exploit Australian financial system",
+    "source": "ASIC",
+    "category": "Other",
     "severity": "HIGH",
-    "date": "2026-05-25T13:40:00Z",
+    "date": "2026-05-15T00:00:00Z",
     "breaking": false
   }
 ]
