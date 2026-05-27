@@ -1,5 +1,15 @@
 [
   {
+  "id": "u2",
+  "title": "Community report: scammers impersonating a major telco calling about a 'compromised NBN connection', requesting remote access to the victim's computer to 'fix' it.",
+  "source": "Community",
+  "category": "Impersonation",
+  "severity": "MEDIUM",
+  "date": "2026-05-27T23:16:00",
+  "breaking": true,
+  "expires": "2026-05-28T08:00:00"
+},
+  {
     "id": "SW-20260519-001",
     "title": "Investment bonds scam targeting Australians with false high-return promises",
     "source": "Scamwatch",
