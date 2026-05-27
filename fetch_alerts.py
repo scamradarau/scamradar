@@ -24,15 +24,15 @@ existing = [
 client = anthropic.Anthropic()
 
 response = client.messages.create(
-    model="claude-haiku-4-5-20251001",
+    model="claude-sonnet-4-5",
     max_tokens=1500,
     tools=[{"type": "web_search_20250305", "name": "web_search"}],
     system="""You are a scam intelligence analyst for Australia. 
 Search for the latest Australian scam alerts from scamwatch.gov.au, 
 accc.gov.au, asic.gov.au, afp.gov.au and Australian news outlets today.
 Return ONLY a raw JSON array, no markdown, no fences, no preamble.
-Each object must have: id (unique string), title (original 1-2 sentence 
-summary max 130 chars, your own words), source (Scamwatch|ACCC|ASIC|AFP|News), 
+Each object must have: id (unique string), title (original 2-3 sentence 
+summary max 300 chars, your own words), source (Scamwatch|ACCC|ASIC|AFP|News), 
 category (Investment|Impersonation|Phishing|Romance|Crypto|Employment|Shopping|Other), 
 severity (HIGH|MEDIUM|LOW), date (e.g. 2026-05-26T15:30:00 — use ISO format with actual date and time), breaking (true|false).
 Return 10-12 items. Write original summaries only.""",
