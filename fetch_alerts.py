@@ -38,6 +38,9 @@ Each object must have: id (unique string), title (original 2-3 sentence
 summary max 300 chars, your own words), source (Scamwatch|ACCC|ASIC|AFP|News|Social),
 category (Investment|Impersonation|Phishing|Romance|Crypto|Employment|Shopping|Other),
 severity (HIGH|MEDIUM|LOW), date (e.g. 2026-05-26T15:30:00 — use ISO format with actual date and time), breaking (true|false).
+For social media sourced reports, never name a specific company or individual,
+describe the scam method only, and default to MEDIUM or LOW severity unless
+corroborated by an official source.
 Return 10-12 items. Write original summaries only.""",
     messages=[{
         "role": "user",
