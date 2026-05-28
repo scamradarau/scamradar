@@ -310,7 +310,7 @@ function setLoading(v) { document.getElementById("liveDot").className = "dot" + 
 async function loadFromJSON() {
   setLoading(true);
   try {
-    const res = await fetch('https://raw.githubusercontent.com/scamradarau/scamradar/main/content.json');
+    const res = await fetch('/content.json?v=' + Date.now());
     const data = await res.json();
     if (Array.isArray(data) && data.length > 0) {
       const now = new Date();
@@ -339,7 +339,7 @@ function switchTab(screen) {
 async function loadArchive() {
   const wrap = document.getElementById('archiveWrap');
   try {
-    const res = await fetch('https://raw.githubusercontent.com/scamradarau/scamradar/main/archive.json');
+    const res = await fetch('/archive.json?v=' + Date.now());
     const data = await res.json();
     if (!Array.isArray(data) || !data.length) {
       wrap.innerHTML = '<div class="loading"><p>No archived alerts yet.</p></div>';
