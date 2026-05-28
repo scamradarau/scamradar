@@ -369,5 +369,125 @@
     "date": "2026-05-27T00:00:00Z",
     "breaking": true,
     "first_seen": "2026-05-27T23:06:53.725590"
+  },
+  {
+    "id": "ACCC-CRYPTO-20260525",
+    "title": "Fake cryptocurrency trading platforms promoted via messaging apps targeting investors through share trading and stock tips groups with no real trading occurring.",
+    "source": "ACCC",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-05-25T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "AFP-PORTING-20260515",
+    "title": "Phone porting scams enable unauthorized access to mobile numbers for identity theft and account takeover targeting victims' 2FA security.",
+    "source": "AFP",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-05-15T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "SCAMWATCH-CRYPTO-POLICE-20260228",
+    "title": "Scammers impersonate AFP and police using fake ReportCyber reports to trick victims into transferring cryptocurrency or sharing seed phrases.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-02-04T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "ASIC-SMSF-20260519",
+    "title": "ATO and ASIC warn of SMSF and early superannuation access scams via social media and cold calls encouraging illegal retirement fund withdrawal.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "ACCC-AIRLINE-20260209",
+    "title": "Qantas impersonation scams via SMS and email claiming refunds, gifts or expiring points to steal personal information and funds.",
+    "source": "ACCC",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-02-09T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "SCAMWATCH-CHARITY-20260401",
+    "title": "Criminals impersonate real charities on social media stealing donations and personal information through fraudulent fundraising.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-04-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "ASIC-AI-INVESTMENT-20260408",
+    "title": "ASIC removes record numbers of AI-powered social media phishing and investment scam websites directing consumers to fraudulent platforms.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-08T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "SCAMWATCH-EMPLOYER-20260201",
+    "title": "Recruiters impersonate well-known companies via SMS offering flexible work-from-home opportunities for task-based jobs to steal personal information.",
+    "source": "Scamwatch",
+    "category": "Employment",
+    "severity": "MEDIUM",
+    "date": "2026-02-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "NEWS-CELEB-DEEPFAKE-20260507",
+    "title": "Deepfake and photo-edited advertisements impersonating Australian celebrities and politicians spread via paid social media ads promoting crypto and get-rich schemes.",
+    "source": "News",
+    "category": "Crypto",
+    "severity": "MEDIUM",
+    "date": "2026-05-07T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "ASIC-SUPERANNUATION-20260204",
+    "title": "Superannuation trustees lag significantly behind banks in anti-scam communications with only 40-60% meeting basic fraud protection standards.",
+    "source": "ASIC",
+    "category": "Other",
+    "severity": "MEDIUM",
+    "date": "2026-02-04T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "NEWS-INVOICE-BUSINESS-20260514",
+    "title": "Fake invoice scams target small businesses with fraudulent requests for payment on products or services never ordered.",
+    "source": "News",
+    "category": "Shopping",
+    "severity": "MEDIUM",
+    "date": "2026-05-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-28T11:53:14.965156"
+  },
+  {
+    "id": "ACCC-2025-LOSSES-20260330",
+    "title": "Australians lost $2.18 billion to scams in 2025 with investment scams accounting for $837.7 million and romance scams $139.9 million.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-03-30T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-28T11:53:14.965156"
   }
 ]

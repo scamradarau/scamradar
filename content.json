@@ -1,120 +1,110 @@
 [
   {
-    "id": "u2",
-    "title": "Community report: scammers impersonating a major telco calling about a 'compromised NBN connection', requesting remote access to the victim's computer to 'fix' it.",
-    "source": "Community",
-    "category": "Impersonation",
-    "severity": "MEDIUM",
-    "date": "2026-05-27T23:16:00",
-    "breaking": true,
-    "expires": "2026-05-28T08:00:00"
-  },
-  {
-    "id": "ASIC-CRYPTO-20260527",
-    "title": "Fake crypto trading platforms targeting Australians through messaging app investment groups, with fabricated dashboards and fake data. Scammers lure victims and charge unlocking fees.",
-    "source": "ASIC",
+    "id": "ACCC-CRYPTO-20260525",
+    "title": "Fake cryptocurrency trading platforms promoted via messaging apps targeting investors through share trading and stock tips groups with no real trading occurring.",
+    "source": "ACCC",
     "category": "Crypto",
     "severity": "HIGH",
-    "date": "2026-05-26T00:00:00Z",
+    "date": "2026-05-25T00:00:00Z",
     "breaking": true
   },
   {
-    "id": "SCAMWATCH-BONDS-20260519",
-    "title": "Criminals impersonating legitimate businesses offering fake investment bonds with promised high returns and government protection claims. ASIC has taken down multiple fake websites.",
-    "source": "Scamwatch",
-    "category": "Investment",
+    "id": "AFP-PORTING-20260515",
+    "title": "Phone porting scams enable unauthorized access to mobile numbers for identity theft and account takeover targeting victims' 2FA security.",
+    "source": "AFP",
+    "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2026-05-19T00:00:00Z",
-    "breaking": false
+    "date": "2026-05-15T00:00:00Z",
+    "breaking": true
   },
   {
-    "id": "ACCC-QANTAS-20260210",
-    "title": "Scammers impersonating Qantas via SMS and emails to steal personal information and money using fake refund and loyalty points offers.",
-    "source": "ACCC",
-    "category": "Phishing",
-    "severity": "MEDIUM",
-    "date": "2026-02-10T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "SCAMWATCH-MOBILE-20260407",
-    "title": "Mobile fraud scam where criminals gain control of phone numbers to receive verification codes and access financial accounts and services.",
+    "id": "SCAMWATCH-CRYPTO-POLICE-20260228",
+    "title": "Scammers impersonate AFP and police using fake ReportCyber reports to trick victims into transferring cryptocurrency or sharing seed phrases.",
     "source": "Scamwatch",
     "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2026-04-07T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "ACCC-ACCC-SPOOF-20250623",
-    "title": "Scammers spoofing ACCC phone numbers to impersonate agency representatives and request sensitive personal and financial information.",
-    "source": "ACCC",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2025-06-23T00:00:00Z",
+    "date": "2026-02-04T00:00:00Z",
     "breaking": false
   },
   {
     "id": "ASIC-SMSF-20260519",
-    "title": "Scammers targeting Australians via social media and cold calls to establish fake self-managed super funds to access retirement savings illegally.",
+    "title": "ATO and ASIC warn of SMSF and early superannuation access scams via social media and cold calls encouraging illegal retirement fund withdrawal.",
     "source": "ASIC",
     "category": "Investment",
     "severity": "HIGH",
     "date": "2026-05-19T00:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "ACCC-AIRLINE-20260209",
+    "title": "Qantas impersonation scams via SMS and email claiming refunds, gifts or expiring points to steal personal information and funds.",
+    "source": "ACCC",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-02-09T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "ASIC-AI-SCAMS-20260408",
-    "title": "ASIC removing record numbers of scam websites and warns of AI-powered investment scams with fake endorsements and trading bots claiming impossible returns.",
+    "id": "SCAMWATCH-CHARITY-20260401",
+    "title": "Criminals impersonate real charities on social media stealing donations and personal information through fraudulent fundraising.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-04-01T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "ASIC-AI-INVESTMENT-20260408",
+    "title": "ASIC removes record numbers of AI-powered social media phishing and investment scam websites directing consumers to fraudulent platforms.",
     "source": "ASIC",
     "category": "Investment",
     "severity": "HIGH",
     "date": "2026-04-08T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "AUSPOST-DELIVERY-20260522",
-    "title": "Delivery scams impersonating Australia Post asking recipients to confirm details for failed deliveries using fake tracking numbers.",
-    "source": "News",
-    "category": "Phishing",
-    "severity": "MEDIUM",
-    "date": "2026-05-22T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "ATO-CRYPTO-20260223",
-    "title": "ATO impersonation scam emails demanding immediate disclosure of cryptocurrency holdings or threatening arrest, using false urgency tactics.",
-    "source": "News",
-    "category": "Impersonation",
-    "severity": "MEDIUM",
-    "date": "2026-02-23T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "POLICE-IMPERSONATION-20260520",
-    "title": "Criminals impersonating Australian Federal Police creating fake ReportCyber reports using people's names and emails.",
-    "source": "Scamwatch",
-    "category": "Impersonation",
-    "severity": "MEDIUM",
-    "date": "2026-05-20T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "ASIC-SUPER-FAKE-SITES-20260519",
-    "title": "Scammers creating fake ASIC websites mimicking official pages to harvest personal and banking information from unsuspecting users.",
-    "source": "ASIC",
-    "category": "Phishing",
-    "severity": "HIGH",
-    "date": "2026-05-19T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "ANZ-ADVISOR-SCAM-20260527",
-    "title": "Callers impersonating ANZ send fake verification emails with codes to create false legitimacy before attempting unauthorized account transfers.",
-    "source": "News",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2026-05-27T00:00:00Z",
     "breaking": true
+  },
+  {
+    "id": "SCAMWATCH-EMPLOYER-20260201",
+    "title": "Recruiters impersonate well-known companies via SMS offering flexible work-from-home opportunities for task-based jobs to steal personal information.",
+    "source": "Scamwatch",
+    "category": "Employment",
+    "severity": "MEDIUM",
+    "date": "2026-02-01T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "NEWS-CELEB-DEEPFAKE-20260507",
+    "title": "Deepfake and photo-edited advertisements impersonating Australian celebrities and politicians spread via paid social media ads promoting crypto and get-rich schemes.",
+    "source": "News",
+    "category": "Crypto",
+    "severity": "MEDIUM",
+    "date": "2026-05-07T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "ASIC-SUPERANNUATION-20260204",
+    "title": "Superannuation trustees lag significantly behind banks in anti-scam communications with only 40-60% meeting basic fraud protection standards.",
+    "source": "ASIC",
+    "category": "Other",
+    "severity": "MEDIUM",
+    "date": "2026-02-04T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "NEWS-INVOICE-BUSINESS-20260514",
+    "title": "Fake invoice scams target small businesses with fraudulent requests for payment on products or services never ordered.",
+    "source": "News",
+    "category": "Shopping",
+    "severity": "MEDIUM",
+    "date": "2026-05-14T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "ACCC-2025-LOSSES-20260330",
+    "title": "Australians lost $2.18 billion to scams in 2025 with investment scams accounting for $837.7 million and romance scams $139.9 million.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-03-30T00:00:00Z",
+    "breaking": false
   }
 ]
