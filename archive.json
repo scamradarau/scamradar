@@ -609,5 +609,125 @@
     "date": "2026-02-04T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-05-28T12:56:36.281703"
+  },
+  {
+    "id": "SW-2026-05-01",
+    "title": "Fake crypto asset trading platforms proliferating through messaging apps. Scammers lure retail investors via WhatsApp and group chats, displaying false profits before stealing deposits.",
+    "source": "ASIC",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-02",
+    "title": "Mobile number fraud alert from ACMA and Scamwatch. Criminals taking control of phone numbers to intercept verification codes and access bank accounts, myGov, and subscription services.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-04-07T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-03",
+    "title": "Qantas impersonation phishing campaign active via email and SMS. Scammers claiming refunds, expiring points or rewards to steal login credentials and personal information.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-02-10T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-04",
+    "title": "Cambodian scam centre raid exposes 300 Australians' data. Phone numbers, names and addresses seized in documents, victims at risk of targeted fraud schemes.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-02-11T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-05",
+    "title": "Investment bond scam falsely claims ASIC approval. Scammers offering bonds purportedly cancellable after 90 days, targeting retail investors via unsolicited communications.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-06",
+    "title": "ACCC phone number spoofing scam. Criminals impersonating ACCC representatives claiming unclaimed refunds or penalties, requesting personal and financial information over phone calls.",
+    "source": "ACCC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-03-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-07",
+    "title": "Australia Post delivery scam warning. Fake delivery drivers impersonating Australia Post knocking on doors claiming parcels left; real Australia Post never leaves parcels unattended.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-08",
+    "title": "AI-powered voice cloning scams escalating. Fraudsters using deepfakes and cloned voices to impersonate family members claiming emergencies, with AU$25.8 million lost to voice scams in first half 2025.",
+    "source": "News",
+    "category": "Romance",
+    "severity": "HIGH",
+    "date": "2026-03-06T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-09",
+    "title": "Pacific Australia Labour Mobility scheme workers targeted by fake loan application scams. Fraudsters claiming to assist with loans extract banking details, draining accounts once loan approved.",
+    "source": "ACCC",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-10",
+    "title": "ATO impersonation scams via email falsely claiming taxable income recalculation and compensation due. Victims requested to provide TFN, payslips and driver's licence for identity theft.",
+    "source": "ACCC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-03-23T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-11",
+    "title": "Romance scam statistics show increased losses in Q4 2025. National Anti-Scam Centre taskforce highlights persistent growth in relationship-based fraud targeting vulnerable individuals.",
+    "source": "Scamwatch",
+    "category": "Romance",
+    "severity": "MEDIUM",
+    "date": "2026-02-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
+  },
+  {
+    "id": "SW-2026-05-12",
+    "title": "South Australian Seniors Card scam targeting elderly residents. Fake website falsely claiming to assist with card applications for fee; official card always free with no financial information requested.",
+    "source": "ACCC",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-29T10:58:26.769802"
   }
 ]
