@@ -849,5 +849,125 @@
     "date": "2026-05-15T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-05-29T12:34:31.419080"
+  },
+  {
+    "id": "ASIC-001-2026-05-25",
+    "title": "Fake cryptocurrency trading platforms targeting social media investment groups with fabricated profits and false trading data to steal deposits.",
+    "source": "ASIC",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-05-25T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "SCAMWATCH-001-2026-05-19",
+    "title": "Job recruitment scams using fake task-based work from platforms like Amazon and YouTube, requesting upfront payments after small initial earnings.",
+    "source": "Scamwatch",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "SCAMWATCH-002-2026-05-19",
+    "title": "Investment bonds scam where criminals impersonate legitimate businesses offering high-return environmental bonds with fake website and documentation.",
+    "source": "Scamwatch",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "ATO-ASIC-001-2026-05-19",
+    "title": "SMSF illegal early access scams targeting vulnerable Australians through social media and cold calls, promising early superannuation withdrawals.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "NEWS-001-2026-05-19",
+    "title": "Business email compromise scam resulting in $600,000 loss detected through gold bullion purchases; three arrests made by NSW Police.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "NEWS-002-2026-05-28",
+    "title": "Federal government introduces mandatory scam prevention framework for banking, telecoms and digital platforms with automatic refund scheme for losses under $3,000.",
+    "source": "News",
+    "category": "Other",
+    "severity": "MEDIUM",
+    "date": "2026-05-28T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "ACCC-001-2026-05-25",
+    "title": "Mobile phone number takeover fraud where scammers gain access to phone accounts to reset passwords and access banking and payment services.",
+    "source": "ACCC",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-05-25T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "NEWS-003-2026-05-24",
+    "title": "Investment scams now account for nearly half of total scam losses, with median loss per victim reaching $7,000 compared to overall median of $400.",
+    "source": "News",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-24T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "AUSTRAC-001-2026-05-12",
+    "title": "Financial crime landscape becoming more sophisticated with increased cryptocurrency-enabled money laundering and cross-border fraud operations.",
+    "source": "ACCC",
+    "category": "Crypto",
+    "severity": "MEDIUM",
+    "date": "2026-05-12T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "NEWS-004-2026-05-09",
+    "title": "Large-scale tax and welfare fraud syndicate dismantled; operation used stolen identities and phishing scams to access government accounts.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-05-09T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "ASIC-002-2026-04-08",
+    "title": "AI-powered investment scam websites and social media advertisements proliferating; ASIC removing record numbers of fraudulent phishing platforms.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-08T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "NEWS-005-2026-05-28",
+    "title": "Australians lost $2.18 billion to scams in 2025 with 481,523 reports; latest scam report reveals increasingly sophisticated and targeted fraud tactics.",
+    "source": "News",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "2026-05-28T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-30T07:59:56.742590"
   }
 ]
