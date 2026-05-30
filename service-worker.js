@@ -1,7 +1,7 @@
 // ScamRadar AU — Service Worker
 // Handles offline caching + push notification infrastructure
 
-const CACHE_NAME = 'scamradar-v3';
+const CACHE_NAME = 'scamradar-v4';
 const APP_SHELL = [
   '/',
   '/index.html',

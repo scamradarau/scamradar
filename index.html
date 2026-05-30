@@ -236,6 +236,66 @@ textarea { resize: vertical; min-height: 120px; }
       <div class="loading"><p>Loading archive...</p></div>
     </div>
   </div>
+   <!-- RADAR CHECK SCREEN -->
+  <div class="screen" id="screen-radar">
+    <div class="submit-wrap" id="radarWrap">
+      <h2>🎯 Radar Check</h2>
+      <p class="sub">Describe a suspicious situation. We'll scan it for red flags using our scam intelligence database.</p>
+      <div class="disc">Radar Check is for information only. Always verify with your bank, Scamwatch, or relevant authority before acting. If money has been lost, contact your bank immediately.</div>
+
+      <label>How were you contacted?</label>
+      <select id="rContact">
+        <option>Phone call</option>
+        <option>SMS / text message</option>
+        <option>Email</option>
+        <option>Social media (DM)</option>
+        <option>Dating app</option>
+        <option>In person</option>
+        <option>Other</option>
+      </select>
+
+      <label>Who did they claim to be?</label>
+      <select id="rIdentity">
+        <option>A bank or financial institution</option>
+        <option>A government agency (ATO, myGov, Centrelink, etc.)</option>
+        <option>A telco (Telstra, Optus, NBN)</option>
+        <option>A delivery service (Australia Post, etc.)</option>
+        <option>An online platform (PayPal, Amazon, etc.)</option>
+        <option>A police or law enforcement officer</option>
+        <option>A romantic interest</option>
+        <option>An employer or recruiter</option>
+        <option>A friend or family member</option>
+        <option>Other / unsure</option>
+      </select>
+
+      <label>What did they want from you?</label>
+      <select id="rAsk">
+        <option>To transfer money</option>
+        <option>To share banking or card details</option>
+        <option>To read out an SMS code or one-time password</option>
+        <option>Remote access to my device</option>
+        <option>To click a link</option>
+        <option>To install something</option>
+        <option>Personal information (ID, address, etc.)</option>
+        <option>Cryptocurrency</option>
+        <option>Nothing yet — just contact</option>
+        <option>Other</option>
+      </select>
+
+      <label>Was it urgent, threatening, or pressuring?</label>
+      <select id="rUrgency">
+        <option>Yes — very urgent or threatening</option>
+        <option>Somewhat pressuring</option>
+        <option>No, calm and casual</option>
+        <option>Not sure</option>
+      </select>
+
+      <label>Anything else worth knowing? (optional)</label>
+      <textarea id="rFree" placeholder="E.g. they knew my full name, the number looked legit, they stayed on the line..."></textarea>
+
+      <button class="submit-btn" onclick="runRadarCheck()">🎯 Run Radar Check</button>
+    </div>
+  </div>
   <!-- TAB BAR -->
   <nav class="tabbar">
     <button class="tab on" data-screen="feed" onclick="switchTab('feed')">
@@ -249,6 +309,9 @@ textarea { resize: vertical; min-height: 120px; }
     </button>
       <button class="tab" data-screen="archive" onclick="switchTab('archive')">
       <span class="tab-icon">🗂️</span><span class="tab-label">Archive</span>
+    </button>
+    <button class="tab" data-screen="radar" onclick="switchTab('radar')">
+      <span class="tab-icon">🎯</span><span class="tab-label">Radar Check</span>
     </button>  
   </nav>
 </div>
@@ -327,7 +390,72 @@ async function loadFromJSON() {
   }
   setLoading(false);
 }
+async function runRadarCheck() {
+  const contact = document.getElementById('rContact').value;
+  const identity = document.getElementById('rIdentity').value;
+  const ask = document.getElementById('rAsk').value;
+  const urgency = document.getElementById('rUrgency').value;
+  const freeText = document.getElementById('rFree').value;
 
+  const wrap = document.getElementById('radarWrap');
+  wrap.innerHTML = `<div class="loading"><p>Scanning your scenario...</p><small>CROSS-REFERENCING ACTIVE SCAM PATTERNS</small></div>`;
+
+  try {
+    const res = await fetch('/.netlify/functions/radar-check', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        answers: { contact, identity, ask, urgency },
+        freeText
+      })
+    });
+
+    if (!res.ok) throw new Error('Check failed');
+    const r = await res.json();
+    if (r.error) throw new Error(r.error);
+
+    const riskClass = r.risk_level === 'HIGH' ? 'sev-H' : r.risk_level === 'MEDIUM' ? 'sev-M' : 'sev-L';
+    const riskLabel = r.risk_level === 'HIGH' ? 'HIGH RISK' : r.risk_level === 'MEDIUM' ? 'MEDIUM RISK' : 'LOW RISK';
+
+    wrap.innerHTML = `
+      <h2>🎯 Radar Check Result</h2>
+      <div style="margin:16px 0">
+        <span class="sev ${riskClass}" style="font-size:14px;padding:6px 12px">${riskLabel}</span>
+        <div style="margin-top:8px;font-family:var(--head);font-size:14px;font-weight:600;letter-spacing:0.5px;color:var(--text-mid);text-transform:uppercase">${r.scam_type || 'Suspicious activity'}</div>
+      </div>
+
+      <p style="font-size:14px;line-height:1.6;color:var(--text);margin-bottom:20px">${r.summary}</p>
+
+      ${r.matches_recent_pattern ? `
+        <div style="background:var(--red-dim);border:1px solid var(--red);border-radius:8px;padding:12px;margin-bottom:18px">
+          <div style="font-family:var(--head);font-weight:700;font-size:11px;letter-spacing:1px;color:var(--red);margin-bottom:6px">⚠ MATCHES ACTIVE SCAM PATTERN</div>
+          <p style="font-size:13px;color:var(--text);line-height:1.5">${r.matching_pattern_summary}</p>
+        </div>
+      ` : ''}
+
+      <h3 style="font-family:var(--head);font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--text-mid);margin:18px 0 10px">Red Flags Identified</h3>
+      <ul style="list-style:none;padding:0;margin-bottom:20px">
+        ${(r.red_flags || []).map(f => `<li style="font-size:14px;color:var(--text);line-height:1.5;padding:6px 0 6px 22px;position:relative"><span style="position:absolute;left:0;color:var(--red)">⚑</span>${f}</li>`).join('')}
+      </ul>
+
+      <h3 style="font-family:var(--head);font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--text-mid);margin:18px 0 10px">What To Do Now</h3>
+      <ul style="list-style:none;padding:0;margin-bottom:24px">
+        ${(r.what_to_do || []).map(a => `<li style="font-size:14px;color:var(--text);line-height:1.5;padding:6px 0 6px 22px;position:relative"><span style="position:absolute;left:0;color:var(--green)">→</span>${a}</li>`).join('')}
+      </ul>
+
+      <div class="disc">Radar Check provides general guidance based on common scam patterns. For verified advice, contact Scamwatch (scamwatch.gov.au) or your bank directly. If money was lost, act fast.</div>
+
+      <button class="submit-btn" style="margin-top:20px" onclick="resetRadarCheck()">Run Another Check</button>
+    `;
+  } catch (e) {
+    wrap.innerHTML = `<div class="loading"><p>Could not run check. Please try again.</p></div>
+      <button class="submit-btn" style="margin-top:20px" onclick="resetRadarCheck()">Try Again</button>`;
+  }
+}
+
+function resetRadarCheck() {
+  location.reload();
+}
 // TAB SWITCHING
 function switchTab(screen) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
