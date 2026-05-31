@@ -1,97 +1,52 @@
 [
   {
-    "id": "ASIC-001-2026-05-25",
-    "title": "Fake cryptocurrency trading platforms targeting social media investment groups with fabricated profits and false trading data to steal deposits.",
-    "source": "ASIC",
+    "id": "SW-2026-0501",
+    "title": "Fake crypto trading platforms promoted through investment discussion groups via messaging apps with fabricated dashboards showing false profits.",
+    "source": "Scamwatch",
     "category": "Crypto",
     "severity": "HIGH",
-    "date": "2026-05-25T00:00:00Z",
+    "date": "2026-05-27T00:00:00Z",
     "breaking": true
   },
   {
-    "id": "SCAMWATCH-001-2026-05-19",
-    "title": "Job recruitment scams using fake task-based work from platforms like Amazon and YouTube, requesting upfront payments after small initial earnings.",
+    "id": "SW-2026-0502",
+    "title": "Scammers impersonating ACCC phone numbers via spoofing to steal personal and financial information from Australians.",
     "source": "Scamwatch",
-    "category": "Employment",
-    "severity": "HIGH",
-    "date": "2026-05-19T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "SCAMWATCH-002-2026-05-19",
-    "title": "Investment bonds scam where criminals impersonate legitimate businesses offering high-return environmental bonds with fake website and documentation.",
-    "source": "Scamwatch",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-05-19T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "ATO-ASIC-001-2026-05-19",
-    "title": "SMSF illegal early access scams targeting vulnerable Australians through social media and cold calls, promising early superannuation withdrawals.",
-    "source": "ACCC",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-05-19T00:00:00Z",
-    "breaking": true
-  },
-  {
-    "id": "NEWS-001-2026-05-19",
-    "title": "Business email compromise scam resulting in $600,000 loss detected through gold bullion purchases; three arrests made by NSW Police.",
-    "source": "News",
     "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2026-05-19T00:00:00Z",
-    "breaking": true
-  },
-  {
-    "id": "NEWS-002-2026-05-28",
-    "title": "Federal government introduces mandatory scam prevention framework for banking, telecoms and digital platforms with automatic refund scheme for losses under $3,000.",
-    "source": "News",
-    "category": "Other",
-    "severity": "MEDIUM",
-    "date": "2026-05-28T00:00:00Z",
-    "breaking": true
-  },
-  {
-    "id": "ACCC-001-2026-05-25",
-    "title": "Mobile phone number takeover fraud where scammers gain access to phone accounts to reset passwords and access banking and payment services.",
-    "source": "ACCC",
-    "category": "Phishing",
-    "severity": "HIGH",
-    "date": "2026-05-25T00:00:00Z",
+    "date": "2026-04-24T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "NEWS-003-2026-05-24",
-    "title": "Investment scams now account for nearly half of total scam losses, with median loss per victim reaching $7,000 compared to overall median of $400.",
-    "source": "News",
+    "id": "ASIC-2026-0301",
+    "title": "ASIC impersonation scams requesting payments in USD to release investor funds, using recovery scam tactics.",
+    "source": "ASIC",
     "category": "Investment",
     "severity": "HIGH",
-    "date": "2026-05-24T00:00:00Z",
-    "breaking": true
-  },
-  {
-    "id": "AUSTRAC-001-2026-05-12",
-    "title": "Financial crime landscape becoming more sophisticated with increased cryptocurrency-enabled money laundering and cross-border fraud operations.",
-    "source": "ACCC",
-    "category": "Crypto",
-    "severity": "MEDIUM",
-    "date": "2026-05-12T00:00:00Z",
+    "date": "2026-03-21T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "NEWS-004-2026-05-09",
-    "title": "Large-scale tax and welfare fraud syndicate dismantled; operation used stolen identities and phishing scams to access government accounts.",
-    "source": "News",
-    "category": "Phishing",
+    "id": "AFP-2026-0201",
+    "title": "Scammers impersonating AFP and law enforcement claiming Operation Firestorm to extract cryptocurrency and seed phrases from victims.",
+    "source": "AFP",
+    "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2026-05-09T00:00:00Z",
-    "breaking": true
+    "date": "2026-02-18T00:00:00Z",
+    "breaking": false
   },
   {
-    "id": "ASIC-002-2026-04-08",
-    "title": "AI-powered investment scam websites and social media advertisements proliferating; ASIC removing record numbers of fraudulent phishing platforms.",
+    "id": "SW-2026-0503",
+    "title": "SMS impersonation of major retailers and delivery companies with malicious links leading to credential-stealing websites.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "ASIC-2026-0302",
+    "title": "AI-powered social media investment scam advertisements using celebrity impersonation and deepfakes to promote fraudulent schemes.",
     "source": "ASIC",
     "category": "Investment",
     "severity": "HIGH",
@@ -99,12 +54,57 @@
     "breaking": false
   },
   {
-    "id": "NEWS-005-2026-05-28",
-    "title": "Australians lost $2.18 billion to scams in 2025 with 481,523 reports; latest scam report reveals increasingly sophisticated and targeted fraud tactics.",
-    "source": "News",
+    "id": "SW-2026-0504",
+    "title": "Mobile number takeover fraud enabling account access via verification code interception and password resets across banking and government services.",
+    "source": "Scamwatch",
     "category": "Other",
     "severity": "HIGH",
-    "date": "2026-05-28T00:00:00Z",
-    "breaking": true
+    "date": "2026-04-07T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "SW-2026-0505",
+    "title": "Recruiter impersonation scams offering work-from-home employment with flexible task-based opportunities and payments.",
+    "source": "Scamwatch",
+    "category": "Employment",
+    "severity": "MEDIUM",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "SW-2026-0506",
+    "title": "False bond investment scams impersonating ASIC and major banks offering unrealistic returns with guaranteed protection claims.",
+    "source": "Scamwatch",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "SW-2026-0507",
+    "title": "Qantas brand impersonation via email and SMS claiming reward points expiration, refunds, or gift claims with urgency tactics.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-02-09T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "SW-2026-0508",
+    "title": "Voice cloning and deepfake AI-generated emergency calls from relatives requesting immediate cash transfers via social engineering.",
+    "source": "News",
+    "category": "Romance",
+    "severity": "HIGH",
+    "date": "2026-03-06T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "SW-2026-0509",
+    "title": "Betting and sports investment scams accounting for tripled losses in 2025, often involving market manipulation and recovery tactics.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "MEDIUM",
+    "date": "2026-03-30T00:00:00Z",
+    "breaking": false
   }
 ]

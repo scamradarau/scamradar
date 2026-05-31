@@ -969,5 +969,125 @@
     "date": "2026-05-28T00:00:00Z",
     "breaking": true,
     "first_seen": "2026-05-30T07:59:56.742590"
+  },
+  {
+    "id": "SW-2026-0501",
+    "title": "Fake crypto trading platforms promoted through investment discussion groups via messaging apps with fabricated dashboards showing false profits.",
+    "source": "Scamwatch",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "SW-2026-0502",
+    "title": "Scammers impersonating ACCC phone numbers via spoofing to steal personal and financial information from Australians.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "ASIC-2026-0301",
+    "title": "ASIC impersonation scams requesting payments in USD to release investor funds, using recovery scam tactics.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-03-21T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "AFP-2026-0201",
+    "title": "Scammers impersonating AFP and law enforcement claiming Operation Firestorm to extract cryptocurrency and seed phrases from victims.",
+    "source": "AFP",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-02-18T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "SW-2026-0503",
+    "title": "SMS impersonation of major retailers and delivery companies with malicious links leading to credential-stealing websites.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "ASIC-2026-0302",
+    "title": "AI-powered social media investment scam advertisements using celebrity impersonation and deepfakes to promote fraudulent schemes.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-08T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "SW-2026-0504",
+    "title": "Mobile number takeover fraud enabling account access via verification code interception and password resets across banking and government services.",
+    "source": "Scamwatch",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "2026-04-07T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "SW-2026-0505",
+    "title": "Recruiter impersonation scams offering work-from-home employment with flexible task-based opportunities and payments.",
+    "source": "Scamwatch",
+    "category": "Employment",
+    "severity": "MEDIUM",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "SW-2026-0506",
+    "title": "False bond investment scams impersonating ASIC and major banks offering unrealistic returns with guaranteed protection claims.",
+    "source": "Scamwatch",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "SW-2026-0507",
+    "title": "Qantas brand impersonation via email and SMS claiming reward points expiration, refunds, or gift claims with urgency tactics.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-02-09T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "SW-2026-0508",
+    "title": "Voice cloning and deepfake AI-generated emergency calls from relatives requesting immediate cash transfers via social engineering.",
+    "source": "News",
+    "category": "Romance",
+    "severity": "HIGH",
+    "date": "2026-03-06T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "SW-2026-0509",
+    "title": "Betting and sports investment scams accounting for tripled losses in 2025, often involving market manipulation and recovery tactics.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "MEDIUM",
+    "date": "2026-03-30T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-05-31T08:30:16.587603"
   }
 ]
