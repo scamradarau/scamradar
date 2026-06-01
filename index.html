@@ -345,6 +345,7 @@ const verifyMap = {
 };
 let alerts = [];
 let activeCat = "All";
+let activeArchiveCat = "All";
 
 const SEED = [];
 
@@ -498,29 +499,49 @@ async function loadArchive() {
       wrap.innerHTML = '<div class="loading"><p>No archived alerts yet.</p></div>';
       return;
     }
-    data.sort((a,b) => new Date(b.first_seen||b.date) - new Date(a.first_seen||a.date));
+
+    // Filter by category
+    const filtered = activeArchiveCat === "All"
+      ? data
+      : data.filter(a => a.category === activeArchiveCat);
+
+    // Sort newest first
+    filtered.sort((a,b) => new Date(b.first_seen||b.date) - new Date(a.first_seen||a.date));
+
+    // Only last 7 days
     const cutoff = new Date(); cutoff.setDate(cutoff.getDate() - 7);
     const groups = {};
-    data.forEach(a => {
+    filtered.forEach(a => {
       const d = new Date(a.first_seen||a.date);
       if (d < cutoff) return;
       const key = d.toLocaleDateString('en-AU',{day:'numeric',month:'long',year:'numeric'});
       (groups[key] = groups[key] || []).push(a);
     });
-    let html = '';
-    for (const date in groups) {
-      html += `<div style="font-family:var(--mono);font-size:11px;color:var(--text-mid);text-align:center;margin:18px 0 10px;letter-spacing:1px">── ${date} ──</div>`;
-      html += groups[date].map(a => {
-        const sc = a.severity==='HIGH'?'sev-H':a.severity==='MEDIUM'?'sev-M':'sev-L';
-        const sl = a.severity==='HIGH'?'HIGH':a.severity==='MEDIUM'?'MED':'LOW';
-        const ss = srcMap[a.source]||'src-NW';
-        return `<div class="card" style="margin-bottom:10px">
-  <div class="card-top"><div class="card-left"><span class="sev ${sc}">${sl}</span></div><span class="src ${ss}">${a.source}</span></div>
-  <div class="card-title">${a.title}</div>
-  <div class="card-bottom"><span class="cat">${a.category}</span></div>
-  <a href="${(verifyMap[a.category]||verifyMap.Other).url}" target="_blank" rel="noopener" class="verify-link">Verify with ${(verifyMap[a.category]||verifyMap.Other).name} →</a>
-</div>`;
-      }).join('');
+
+    // Build filter bar
+    const filterHTML = '<div class="filters" style="border-bottom:1px solid var(--border);padding-bottom:12px;margin-bottom:8px">' +
+      CATS.map(c => `<button class="fbtn${activeArchiveCat===c?' on':''}" onclick="setArchiveCat('${c}')">${c}</button>`).join('') +
+      `<span class="fcnt">${filtered.length} archived</span></div>`;
+
+    // Build feed groups
+    let html = filterHTML;
+    if (Object.keys(groups).length === 0) {
+      html += '<div class="loading"><p>No archived alerts in this category.</p></div>';
+    } else {
+      for (const date in groups) {
+        html += `<div style="font-family:var(--mono);font-size:11px;color:var(--text-mid);text-align:center;margin:18px 0 10px;letter-spacing:1px">── ${date} ──</div>`;
+        html += groups[date].map(a => {
+          const sc = a.severity==='HIGH'?'sev-H':a.severity==='MEDIUM'?'sev-M':'sev-L';
+          const sl = a.severity==='HIGH'?'HIGH':a.severity==='MEDIUM'?'MED':'LOW';
+          const ss = srcMap[a.source]||'src-NW';
+          return `<div class="card" style="margin-bottom:10px">
+            <div class="card-top"><div class="card-left"><span class="sev ${sc}">${sl}</span></div><span class="src ${ss}">${a.source}</span></div>
+            <div class="card-title">${a.title}</div>
+            <div class="card-bottom"><span class="cat">${a.category}</span></div>
+            <a href="${(verifyMap[a.category]||verifyMap.Other).url}" target="_blank" rel="noopener" class="verify-link">Verify with ${(verifyMap[a.category]||verifyMap.Other).name} →</a>
+          </div>`;
+        }).join('');
+      }
     }
     wrap.innerHTML = html;
   } catch(e) {
