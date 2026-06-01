@@ -2,7 +2,16 @@ import anthropic
 import json
 import re
 from datetime import datetime
-
+def make_dedup_key(alert):
+    """Generate a deduplication key from an alert based on category + keywords."""
+    category = (alert.get('category') or '').lower().strip()
+    title = (alert.get('title') or '').lower()
+    keywords = [
+        'ato', 'mygov', 'centrelink', 'medicare',
+        # ... etc, the full list from my earlier message
+    ]
+    found = sorted({kw for kw in keywords if kw in title})
+    return f"{category}::{':'.join(found)}"
 # Load existing content.json, remove expired community alerts
 try:
     with open('content.json', 'r') as f:
@@ -25,12 +34,12 @@ if expiring_community:
             archive_early = json.load(f)
     except:
         archive_early = []
-    seen_early = {a.get('title') for a in archive_early}
-    for a in expiring_community:
-        if a.get('title') not in seen_early:
-            entry = dict(a)
-            entry['first_seen'] = a.get('date', now.isoformat())
-            archive_early.append(entry)
+    seen_early = {make_dedup_key(a) for a in archive_early}
+for a in expiring_community:
+    if make_dedup_key(a) not in seen_early:
+        entry = dict(a)
+        entry['first_seen'] = a.get('date', now.isoformat())
+        archive_early.append(entry)
     with open('archive.json', 'w') as f:
         json.dump(archive_early, f, indent=2)
     print(f"✅ Archived {len(expiring_community)} expiring community alert(s)")
@@ -58,7 +67,7 @@ news outlets, and Reddit (r/australia, r/AusFinance, r/scams).
 Use at most 5 web searches total.
 Return ONLY a raw JSON array, no markdown, no fences, no preamble.
 Each object must have: id (unique string), title (original 2-3 sentence
-summary max 300 chars, your own words), source (Scamwatch|ACCC|ASIC|AFP|News|Social),
+summary minimum 300 chars, your own words), source (Scamwatch|ACCC|ASIC|AFP|News|Social),
 category (Investment|Impersonation|Phishing|Romance|Crypto|Employment|Shopping|Other),
 severity (HIGH|MEDIUM|LOW), date (ISO format with actual date and time), breaking (true|false).
 For social media sourced reports, never name a specific company or individual,
@@ -90,15 +99,16 @@ if match:
     except:
         archive = []
 
-    seen_titles = {a.get('title') for a in archive}
-    today_iso = datetime.now().isoformat()
+seen_keys = {make_dedup_key(a) for a in archive}
+today_iso = datetime.now().isoformat()
 
-    for alert in final_alerts:
-        if alert.get('title') not in seen_titles:
-            entry = dict(alert)
-            entry['first_seen'] = today_iso
-            archive.append(entry)
-            seen_titles.add(alert.get('title'))
+for alert in final_alerts:
+    key = make_dedup_key(alert)
+    if key not in seen_keys:
+        entry = dict(alert)
+        entry['first_seen'] = today_iso
+        archive.append(entry)
+        seen_keys.add(key)
 
     with open('archive.json', 'w') as f:
         json.dump(archive, f, indent=2)
