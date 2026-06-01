@@ -66,8 +66,8 @@ Search for the latest Australian scam alerts from official sources
 news outlets, and Reddit (r/australia, r/AusFinance, r/scams).
 Use at most 5 web searches total.
 Return ONLY a raw JSON array, no markdown, no fences, no preamble.
-Each object must have: id (unique string), title (original 3-4 sentence
-summary minimum 300 chars, your own words), source (Scamwatch|ACCC|ASIC|AFP|News|Social),
+Each object must have: id (unique string), title (original 2-3 sentence
+summary,your own words), source (Scamwatch|ACCC|ASIC|AFP|News|Social),
 category (Investment|Impersonation|Phishing|Romance|Crypto|Employment|Shopping|Other),
 severity (HIGH|MEDIUM|LOW), date (ISO format with actual date and time), breaking (true|false).
 For social media sourced reports, never name a specific company or individual,
