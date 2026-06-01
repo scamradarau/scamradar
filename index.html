@@ -394,6 +394,7 @@ function buildFeed() {
 }
 
 function setCat(c) { activeCat = c; buildFilters(); buildFeed(); }
+function setArchiveCat(c) { activeArchiveCat = c; loadArchive(); }
 function setLoading(v) { document.getElementById("liveDot").className = "dot" + (v?" pulse":""); document.getElementById("liveLabel").textContent = v?"UPDATING":"LIVE"; }
 
 async function loadFromJSON() {
