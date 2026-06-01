@@ -20,6 +20,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>
+  .verify-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-mid);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.verify-link:hover {
+  color: var(--blue);
+}
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 :root {
   --bg: #07090f;
@@ -320,6 +333,16 @@ textarea { resize: vertical; min-height: 120px; }
 <script>
 const CATS = ["All","Investment","Impersonation","Phishing","Romance","Crypto","Employment","Shopping","Other"];
 const srcMap = {Scamwatch:"src-SW",ACCC:"src-AC",ASIC:"src-AS",AFP:"src-AF",News:"src-NW",Community:"src-CM"};
+const verifyMap = {
+  "Investment": { name: "ASIC MoneySmart", url: "https://moneysmart.gov.au/check-and-report-scams" },
+  "Impersonation": { name: "Scamwatch", url: "https://www.scamwatch.gov.au/types-of-scams" },
+  "Phishing": { name: "Scamwatch", url: "https://www.scamwatch.gov.au/types-of-scams/phishing-scams" },
+  "Romance": { name: "Scamwatch", url: "https://www.scamwatch.gov.au/types-of-scams/romance-scams" },
+  "Crypto": { name: "ASIC MoneySmart", url: "https://moneysmart.gov.au/check-and-report-scams" },
+  "Employment": { name: "Scamwatch", url: "https://www.scamwatch.gov.au/types-of-scams/jobs-and-employment-scams" },
+  "Shopping": { name: "Scamwatch", url: "https://www.scamwatch.gov.au/types-of-scams/online-shopping-scams" },
+  "Other": { name: "Scamwatch", url: "https://www.scamwatch.gov.au" }
+};
 let alerts = [];
 let activeCat = "All";
 
@@ -363,8 +386,9 @@ function buildFeed() {
         <span class="src ${ss}">${a.source}</span>
       </div>
       <div class="card-title">${a.title}</div>
-      <div class="card-bottom"><span class="cat">${a.category}</span><span class="dt">${formatDate(a.date)}</span></div>
-    </div>`;
+        <div class="card-bottom"><span class="cat">${a.category}</span><span class="dt">${formatDate(a.date)}</span></div>
+        <a href="${(verifyMap[a.category]||verifyMap.Other).url}" target="_blank" rel="noopener" class="verify-link">Verify with ${(verifyMap[a.category]||verifyMap.Other).name} →</a>
+      </div>`;
   }).join('');
 }
 
@@ -491,10 +515,11 @@ async function loadArchive() {
         const sl = a.severity==='HIGH'?'HIGH':a.severity==='MEDIUM'?'MED':'LOW';
         const ss = srcMap[a.source]||'src-NW';
         return `<div class="card" style="margin-bottom:10px">
-          <div class="card-top"><div class="card-left"><span class="sev ${sc}">${sl}</span></div><span class="src ${ss}">${a.source}</span></div>
-          <div class="card-title">${a.title}</div>
-          <div class="card-bottom"><span class="cat">${a.category}</span></div>
-        </div>`;
+  <div class="card-top"><div class="card-left"><span class="sev ${sc}">${sl}</span></div><span class="src ${ss}">${a.source}</span></div>
+  <div class="card-title">${a.title}</div>
+  <div class="card-bottom"><span class="cat">${a.category}</span></div>
+  <a href="${(verifyMap[a.category]||verifyMap.Other).url}" target="_blank" rel="noopener" class="verify-link">Verify with ${(verifyMap[a.category]||verifyMap.Other).name} →</a>
+</div>`;
       }).join('');
     }
     wrap.innerHTML = html;
