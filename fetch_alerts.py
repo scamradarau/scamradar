@@ -65,14 +65,31 @@ Search for the latest Australian scam alerts from official sources
 (scamwatch.gov.au, accc.gov.au, asic.gov.au, afp.gov.au), Australian
 news outlets, and Reddit (r/australia, r/AusFinance, r/scams).
 Use at most 5 web searches total.
+
 Return ONLY a raw JSON array, no markdown, no fences, no preamble.
-Each object must have: id (unique string), title (original 2-3 sentence
-summary,your own words), source (Scamwatch|ACCC|ASIC|AFP|News|Social),
+
+For each alert, write a substantive title (3-5 sentences, up to 500
+chars) that includes:
+- HOW the scam is delivered (channel, lure, typical script)
+- WHO is being targeted
+- WHAT the scammer is trying to extract (money, credentials, remote access)
+- WHY this version is notable (new tactic, surge, official body
+  involvement, big loss reported)
+
+Avoid generic phrasing like 'scammers are targeting Australians' or
+'be careful'. Write like a fraud analyst briefing a team: specific,
+operational, useful.
+
+Each object must have: id (unique string), title (as above),
+source (Scamwatch|ACCC|ASIC|AFP|News|Social),
 category (Investment|Impersonation|Phishing|Romance|Crypto|Employment|Shopping|Other),
-severity (HIGH|MEDIUM|LOW), date (ISO format with actual date and time), breaking (true|false).
-For social media sourced reports, never name a specific company or individual,
-describe the scam method only, and default to MEDIUM or LOW severity unless
-corroborated by an official source.
+severity (HIGH|MEDIUM|LOW), date (ISO format with actual date and time),
+breaking (true|false).
+
+For social media sourced reports, never name a specific company or
+individual, describe the scam method only, and default to MEDIUM or
+LOW severity unless corroborated by an official source.
+
 Return 10-12 items. Write original summaries only.""",
     messages=[{
         "role": "user",
