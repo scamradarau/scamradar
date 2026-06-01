@@ -99,19 +99,19 @@ if match:
     except:
         archive = []
 
-seen_keys = {make_dedup_key(a) for a in archive}
-today_iso = datetime.now().isoformat()
+    seen_keys = {make_dedup_key(a) for a in archive}
+    today_iso = datetime.now().isoformat()
 
-for alert in final_alerts:
-    key = make_dedup_key(alert)
-    if key not in seen_keys:
-        entry = dict(alert)
-        entry['first_seen'] = today_iso
-        archive.append(entry)
-        seen_keys.add(key)
+    for alert in final_alerts:
+        key = make_dedup_key(alert)
+        if key not in seen_keys:
+            entry = dict(alert)
+            entry['first_seen'] = today_iso
+            archive.append(entry)
+            seen_keys.add(key)
 
-    with open('archive.json', 'w') as f:
-        json.dump(archive, f, indent=2)
-    print(f"✅ archive.json now holds {len(archive)} total alerts")
+        with open('archive.json', 'w') as f:
+            json.dump(archive, f, indent=2)
+        print(f"✅ archive.json now holds {len(archive)} total alerts")
 else:
     print("❌ No valid JSON found in response")
