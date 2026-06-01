@@ -1,70 +1,79 @@
 [
   {
-    "id": "SW-2026-0501",
-    "title": "Fake crypto trading platforms promoted through investment discussion groups via messaging apps with fabricated dashboards showing false profits.",
-    "source": "Scamwatch",
-    "category": "Crypto",
-    "severity": "HIGH",
-    "date": "2026-05-27T00:00:00Z",
-    "breaking": true
-  },
-  {
-    "id": "SW-2026-0502",
-    "title": "Scammers impersonating ACCC phone numbers via spoofing to steal personal and financial information from Australians.",
+    "id": "ACCC-SPOOFED-PHONE-2025",
+    "title": "ACCC Phone Numbers Spoofed in Credential Harvesting Campaign. Scammers spoof official ACCC contact numbers via VoIP to impersonate agency representatives and request sensitive banking credentials, passwords, and security question answers. Targets general population via cold calls claiming account compliance issues or fraud investigations. Works because victims trust ACCC authority.",
     "source": "Scamwatch",
     "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2026-04-24T00:00:00Z",
+    "date": "2025-06-23T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "ASIC-2026-0301",
-    "title": "ASIC impersonation scams requesting payments in USD to release investor funds, using recovery scam tactics.",
+    "id": "ASIC-RECOVERY-SCAM-2025",
+    "title": "ASIC Impersonation via Email/SMS Requesting Asset Release Payments. Scammers impersonate ASIC in emails and text messages claiming victims' funds are frozen pending security verification, requesting USD payments to unlock accounts. Targets previous scam victims and data breach victims. Extracts advance fees and personal financial data. Recovery scam variant exploiting regulatory trust.",
     "source": "ASIC",
-    "category": "Investment",
+    "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2026-03-21T00:00:00Z",
+    "date": "2025-03-21T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "AFP-2026-0201",
-    "title": "Scammers impersonating AFP and law enforcement claiming Operation Firestorm to extract cryptocurrency and seed phrases from victims.",
+    "id": "AFP-FIRESTORM-CRYPTO-2026",
+    "title": "Fake AFP Operation Firestorm Spoofing to Drain Crypto Wallets. Scammers file false ReportCyber reports using victim identities, then call claiming data breach involvement under legitimate AFP Operation Firestorm, requesting cryptocurrency transfer or seed phrase disclosure. Targets crypto account holders and ReportCyber filers. Direct financial extraction via social engineering and authority impersonation.",
     "source": "AFP",
     "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2026-02-18T00:00:00Z",
+    "date": "2026-02-04T16:19:00Z",
     "breaking": false
   },
   {
-    "id": "SW-2026-0503",
-    "title": "SMS impersonation of major retailers and delivery companies with malicious links leading to credential-stealing websites.",
-    "source": "Scamwatch",
-    "category": "Phishing",
-    "severity": "MEDIUM",
-    "date": "2026-04-14T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "ASIC-2026-0302",
-    "title": "AI-powered social media investment scam advertisements using celebrity impersonation and deepfakes to promote fraudulent schemes.",
+    "id": "ASIC-AI-PHISHING-SITES-2026",
+    "title": "AI-Powered Investment Scam Sites Surge 90% Year-on-Year. ASIC removed record 11,964 phishing and fake investment websites in 2025 (90% increase), averaging 32 sites daily. Scammers deploy AI-generated deepfakes in social media ads to direct users to fake trading platforms. Targets retail investors via Facebook, Instagram, TikTok with celebrity impersonation lures. Indicates industrial-scale infrastructure.",
     "source": "ASIC",
     "category": "Investment",
     "severity": "HIGH",
     "date": "2026-04-08T00:00:00Z",
-    "breaking": false
+    "breaking": true
   },
   {
-    "id": "SW-2026-0504",
-    "title": "Mobile number takeover fraud enabling account access via verification code interception and password resets across banking and government services.",
-    "source": "Scamwatch",
-    "category": "Other",
+    "id": "ASIC-ALPHA-TAG-SMS-2025",
+    "title": "ASIC Impersonation via SMS Alpha Tags for Data Harvesting. Scammers send SMS using ASIC alpha tags (sender name spoofing) requesting personal detail updates for business registry renewal or account compliance. Leverages trust in SMS authority indicators to harvest identity documents and banking credentials. Targets businesses and account holders with existing government interactions.",
+    "source": "ASIC",
+    "category": "Phishing",
     "severity": "HIGH",
-    "date": "2026-04-07T00:00:00Z",
+    "date": "2025-04-03T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "SW-2026-0505",
-    "title": "Recruiter impersonation scams offering work-from-home employment with flexible task-based opportunities and payments.",
+    "id": "ASIC-FAKE-BOND-DEPOSITS-2025",
+    "title": "Sophisticated Bond and Term Deposit Impersonation with Fake Reviews. Scammers impersonate legitimate financial services with minimal web presence, mirror ABN/license numbers in ads, create counterfeit investment materials and fake reviews. Solicit application forms and personal ID, then request fund transfers to third-party accounts. Targets retirees and conservative investors seeking yields; uses realistic investment narratives.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2025-03-27T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "QANTAS-PHISHING-SURGE-2026",
+    "title": "Qantas Brand Impersonation Spike in Email and SMS Claiming Refund/Points Expiry. Scammers send urgent Qantas-branded emails/SMS with refund claims, gift claims, or expiring points urgency, linking to fake websites mirroring official portals. Targets frequent flyers and non-customers via bulk email; secondary variant uses 'account protection security' subject line. Works via logo/branding replication and artificial scarcity tactics.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-02-09T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "SOCIAL-MEDIA-FAKE-CRYPTO-2026",
+    "title": "Fake Crypto Trading Platform Promotion in Messaging Group Infiltration. Scammers infiltrate share trading and stock tips groups on messaging apps, promoting fake crypto exchange platforms with professional branding. Victims deposit funds into controlled wallets, see fake performance gains, then lose access. Targets retail investors in community investing groups seeking yield or quick gains during bull markets.",
+    "source": "Scamwatch",
+    "category": "Crypto",
+    "severity": "MEDIUM",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "WORK-FROM-HOME-RECRUITMENT-2026",
+    "title": "Employment Scam SMS Recruiting for Task-Based Remote Work. Scammers text job offers for flexible remote task-based work with above-market pay, often impersonating recruitment agencies or well-known companies. Requests upfront fees for training/equipment/visa processing, or directs to fake application portals harvesting banking data. Targets underemployed or gig-economy workers; uses WhatsApp or SMS channels.",
     "source": "Scamwatch",
     "category": "Employment",
     "severity": "MEDIUM",
@@ -72,39 +81,30 @@
     "breaking": false
   },
   {
-    "id": "SW-2026-0506",
-    "title": "False bond investment scams impersonating ASIC and major banks offering unrealistic returns with guaranteed protection claims.",
+    "id": "MOBILE-ACCOUNT-TAKEOVER-2026",
+    "title": "SIM Swap and Mobile Number Porting for Account Access. Criminals gain access to compromised email and ID documents through phishing/data breaches, contact telco to port victim's number to attacker-controlled SIM, receive 2FA codes and account reset links. Enables unauthorized banking, cryptocurrency, and government services access. Targets victims with data breach exposure; growing trend correlating with increased phishing effectiveness.",
     "source": "Scamwatch",
-    "category": "Investment",
+    "category": "Other",
     "severity": "HIGH",
-    "date": "2026-04-14T00:00:00Z",
+    "date": "2026-04-07T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "SW-2026-0507",
-    "title": "Qantas brand impersonation via email and SMS claiming reward points expiration, refunds, or gift claims with urgency tactics.",
-    "source": "Scamwatch",
-    "category": "Phishing",
-    "severity": "MEDIUM",
-    "date": "2026-02-09T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "SW-2026-0508",
-    "title": "Voice cloning and deepfake AI-generated emergency calls from relatives requesting immediate cash transfers via social engineering.",
+    "id": "DEEPFAKE-VIDEO-IMPERSONATION-2026",
+    "title": "AI-Generated Video Deepfake Investment Scams Targeting High-Net-Worth Individuals. Scammers create realistic video calls using AI-generated synthetic media impersonating celebrities, business figures, and personal contacts to solicit investment transfers or cryptocurrency deposits. National Australia Bank reported $100,000 attempted fraud. Targets investors via dating apps, investment groups, and professional networks with synthetic authority figures.",
     "source": "News",
-    "category": "Romance",
+    "category": "Investment",
     "severity": "HIGH",
-    "date": "2026-03-06T00:00:00Z",
-    "breaking": false
+    "date": "2026-05-15T00:00:00Z",
+    "breaking": true
   },
   {
-    "id": "SW-2026-0509",
-    "title": "Betting and sports investment scams accounting for tripled losses in 2025, often involving market manipulation and recovery tactics.",
-    "source": "ACCC",
-    "category": "Investment",
-    "severity": "MEDIUM",
-    "date": "2026-03-30T00:00:00Z",
+    "id": "WESTPAC-PHISHING-EMAIL-2026",
+    "title": "Westpac Compliance Verification Phishing Stealing Banking Credentials. Scammers send emails impersonating Westpac urgent account compliance alerts with personalization and deadline urgency, including fake 'Verify your ID' buttons linking to credential-harvesting clones. Extracts online banking passwords, PINs, and CVC security codes. Targets existing Westpac customers via inbox infiltration; button links to fake domain capturing full banking access.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-05-22T00:00:00Z",
     "breaking": false
   }
 ]
