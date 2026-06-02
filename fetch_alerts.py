@@ -3,15 +3,38 @@ import json
 import re
 from datetime import datetime
 def make_dedup_key(alert):
-    """Generate a deduplication key from an alert based on category + keywords."""
+    """Generate a deduplication key based on the specific scam target/brand, not generic methods."""
     category = (alert.get('category') or '').lower().strip()
     title = (alert.get('title') or '').lower()
-    keywords = [
+
+    # Only specific identifiable targets — brands, agencies, scam types
+    # NOT generic delivery methods (sms, phone, phishing, etc.)
+    specific_targets = [
         'ato', 'mygov', 'centrelink', 'medicare',
-        # ... etc, the full list from my earlier message
+        'commonwealth bank', 'cba', 'nab', 'anz', 'westpac', 'ubank', 'macquarie', 'bendigo',
+        'auspost', 'australia post',
+        'telstra', 'optus', 'nbn',
+        'qantas', 'virgin',
+        'docusign', 'paypal', 'amazon', 'ebay', 'netflix',
+        'revenue nsw', 'service nsw', 'transport nsw',
+        'safe account', 'pig butchering', 'mule',
+        'hi mum', 'wrong number',
+        'age verification', 'under 16',
+        'tax refund', 'toll', 'fine',
+        'rug pull', 'defi', 'fake exchange',
+        'romance scam', 'dating scam',
+        'job scam', 'recruitment scam',
+        'tinder swindler', 'investment seminar',
+        'subpoena', 'arrest warrant'
     ]
-    found = sorted({kw for kw in keywords if kw in title})
-    return f"{category}::{':'.join(found)}"
+
+    found = sorted({kw for kw in specific_targets if kw in title})
+
+    # If we found specific targets, key on them. Otherwise fall back to category + first 40 chars of title.
+    if found:
+        return f"{category}::{':'.join(found)}"
+    else:
+        return f"{category}::{title[:40]}"
 # Load existing content.json, remove expired community alerts
 try:
     with open('content.json', 'r') as f:
