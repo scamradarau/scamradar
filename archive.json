@@ -1089,5 +1089,85 @@
     "date": "2026-03-30T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-05-31T08:30:16.587603"
+  },
+  {
+    "id": "ACCC-2026-06-02-Mobile-Takeover",
+    "title": "Mobile Number Takeover Targeting Financial Accounts Via SMS Interception. Criminals gain control of phone numbers or change telco account details, receiving 2FA codes and OTPs to compromise banking, myGov, subscriptions, and rewards programs. Joint ACCC-ACMA alert issued April 2026 following email/data breach compromises exposing identity documents and passwords.",
+    "source": "ACCC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-04-07T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-02T06:44:00.327866"
+  },
+  {
+    "id": "SCAMWATCH-2026-06-02-Recruitment-SMS",
+    "title": "Well-known Brand Impersonation via SMS for Task-Based Work Scams. Criminals spoof Amazon and YouTube via text messages, posing as recruiters offering well-paid, flexible work-from-home tasks to extract upfront fees or banking credentials. No legitimate organization delivers employment offers unsolicited via SMS.",
+    "source": "Scamwatch",
+    "category": "Employment",
+    "severity": "MEDIUM",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-02T06:44:00.327866"
+  },
+  {
+    "id": "SCAMWATCH-2026-06-02-Fake-Crypto-Platforms",
+    "title": "Fake Crypto Trading Platforms Promoted in Messaging Groups. Scammers recruit victims from 'share trading' and 'stock tips' chat groups on messaging apps, redirecting to fraudulent cryptocurrency exchanges designed to steal deposit funds and harvest trading credentials for account takeovers.",
+    "source": "Scamwatch",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-02T06:44:00.327866"
+  },
+  {
+    "id": "ASIC-2026-06-02-AI-Investment-Scams",
+    "title": "AI-Powered Investment Scam Websites Surging at Record Takedown Rate. ASIC removed 11,964 phishing and investment scam websites in 2025 (90% increase), averaging 32 takedowns daily. AI-generated deepfakes impersonate celebrities and financial experts on paid social ads promoting fake trading platforms with fabricated performance dashboards.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-08T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-02T06:44:00.327866"
+  },
+  {
+    "id": "SCAMWATCH-2026-06-02-Investment-Bonds",
+    "title": "Fake Investment Bonds Impersonating Real Businesses With Government Protection Claims. Criminals create near-identical broker emails and websites spoofing legitimate finance companies, offering high-return government-backed bonds (recently impersonating Bunnings promoting environmental bonds at 9% returns) requiring $50k-$250k deposits.",
+    "source": "Scamwatch",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-02T06:44:00.327866"
+  },
+  {
+    "id": "COMMBANK-2026-06-02-ASIC-Impersonation",
+    "title": "Fraudulent Letters Impersonating ASIC Demanding Fund Transfers. Scammers mail physical letters using authentic ASIC formatting and branding, falsely claiming bank staff under investigation and instructing victims to transfer 'asset protection fees' to secure accounts. ASIC never requests payments or transfers.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-02T06:44:00.327866"
+  },
+  {
+    "id": "NABC-2026-06-02-AI-Voice-Deepfake",
+    "title": "AI Voice-Cloning and Deepfake Video Scams Targeting Family Urgency. Criminals use artificial intelligence to clone family member voices in emergency calls ('Hi Mum') or create video deepfakes of relatives and celebrities, claiming urgent cash transfers needed. Australians lost $25.8 million to voice scams in first half of 2025.",
+    "source": "News",
+    "category": "Romance",
+    "severity": "HIGH",
+    "date": "2026-05-27T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-02T06:44:00.327866"
+  },
+  {
+    "id": "COMMBANK-2026-06-02-Seasonal-Worker-Loan",
+    "title": "Loan Application Scam Targeting Pacific Labour Mobility Workers. Criminals contact seasonal workers (PALM scheme) posing as loan assistants, charging application 'fees' and capturing bank access credentials. Once legitimate loans deposit, scammers transfer full funds to mule accounts, leaving victims with debt.",
+    "source": "News",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-02T06:44:00.327866"
   }
 ]
