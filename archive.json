@@ -1259,5 +1259,85 @@
     "date": "2026-05-01T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-06-02T12:29:52.265696"
+  },
+  {
+    "id": "ASIC-2026-06-001",
+    "title": "ASIC Alpha-Tag SMS Impersonation with Payment Demands. Fraudsters use SMS 'alpha tags' (text sender name spoofing) claiming to be ASIC, requesting payment to release frozen funds or assets. ASIC confirmed never uses alpha tags; credential to release funds is deceptive pretext extracting money from victims.",
+    "source": "ASIC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-01-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-03T15:28:38.872872"
+  },
+  {
+    "id": "ASIC-2026-06-002",
+    "title": "Fraudulent ASIC-Branded Email & Letter Scams Requesting Funds. Scammers send emails and physical letters using ASIC branding claiming bank staff under investigation, instructing transfers to 'secure accounts' to protect assets. ASIC does not request payments or account transfers; letters use authentic formatting to establish false legitimacy.",
+    "source": "ASIC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-03-21T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-03T15:28:38.872872"
+  },
+  {
+    "id": "AFP-2026-06-001",
+    "title": "International Student 'Quick Cash' Account Takeover Scheme. Criminal syndicates approach departing international students offering hundreds of dollars for bank account and ID document access. Stolen identities used to open accounts; funds laundered via cryptocurrency. AFP warning issued late 2025; students at semester-end transition highest risk.",
+    "source": "AFP",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2025-11-21T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-03T15:28:38.872872"
+  },
+  {
+    "id": "NEWS-2026-06-001",
+    "title": "Travel QR Code & Fake Booking Confirmation Surge Ahead of Summer. Scammers overlay fake QR codes on legitimate ones at hotels/airports, send phishing messages impersonating airlines/booking platforms, use real booking details for fake payment requests. 'Reservation hijacking' exploits verification code interception; volume increasing with seasonal travel demand.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-06-03T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-03T15:28:38.872872"
+  },
+  {
+    "id": "ACCC-2026-06-002",
+    "title": "Fake Crypto Trading Platform Recruitment via Share Trading Groups. Scammers infiltrate Facebook/messaging share trading groups, invite members to 'exclusive' crypto asset trading platforms with fabricated credentials. Platforms harvest login credentials and direct investments to criminal wallets. Active Q1 2026; targets amateur investors.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "MEDIUM",
+    "date": "2026-03-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-03T15:28:38.872872"
+  },
+  {
+    "id": "ACCC-2026-06-004",
+    "title": "Betting & Sports Investment Scam Surge ('Scambling'). Phishing ads on social media direct users to fake sports betting platforms offering guaranteed returns; 2025 saw $2.4M in reported losses\u2014triple the prior year. Scammers use influencer impersonations and fake account histories to establish legitimacy.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "MEDIUM",
+    "date": "2026-01-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-03T15:28:38.872872"
+  },
+  {
+    "id": "ASIC-2026-06-003",
+    "title": "Unlicensed Finfluencer Crackdown: Fake Financial Advice & Guaranteed Returns Claims. ASIC issued warning notices to four social media influencers providing unlicensed stock trading and crypto investment advice; reviewing 15 additional finfluencers under AFS licensee oversight. Part of Global Week of Action; targets Gen Z engagement via TikTok/Instagram.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "MEDIUM",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-03T15:28:38.872872"
+  },
+  {
+    "id": "NEWS-2026-06-002",
+    "title": "AI-Enhanced Phishing & Deepfake Impersonation Scaling. Generative AI tools eliminating spelling/grammar tells in phishing emails; voice cloning and deepfake video enabling convincing executive impersonation for payment diversion. Technology improving speed of scam production; 2025 saw investment scams up 25% YoY exploiting AI-generated credibility.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-05-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-03T15:28:38.872872"
   }
 ]
