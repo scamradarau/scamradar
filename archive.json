@@ -1339,5 +1339,95 @@
     "date": "2026-05-01T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-06-03T15:28:38.872872"
+  },
+  {
+    "id": "alert-crypto-2026-06-01",
+    "title": "Fake Crypto Trading Platform Scams via Messaging Apps Surge in June 2026. Scammers lure victims through social media 'share trading' or 'stock tips' groups, move conversations to WhatsApp/Telegram, impersonate financial influencers, and direct deposits to fake trading platforms that harvest funds directly. Gen Z disproportionately targeted for digital asset investment schemes.",
+    "source": "ASIC",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-06-01T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-04T10:51:35.343173"
+  },
+  {
+    "id": "alert-asic-impersonation-2026-05-28",
+    "title": "ASIC Impersonation via Email and SMS Requesting Fund Transfers. Scammers send fraudulent communications claiming funds or assets are held in victim's name and requesting payment to release them. Emails spoof @asic.gov.au addresses; messages reference fake processing fees. Targets investment account holders and superannuation members.",
+    "source": "ASIC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-05-28T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-04T10:51:35.343173"
+  },
+  {
+    "id": "alert-share-sale-fraud-2026-06-24",
+    "title": "Share Sale Fraud via Identity Theft Spike in 2026. Fraudsters compromise brokerage accounts through stolen credentials, execute unauthorized share transfers to external accounts, liquidate holdings. Brokers report clients detecting transfers after market execution. Targets retirement portfolio holders and investment account owners with six-figure holdings.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-06-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-04T10:51:35.343173"
+  },
+  {
+    "id": "alert-bond-deposit-scams-2026-05-30",
+    "title": "Sophisticated Fake Bond and Term Deposit Scams Using Legitimate Business Details. Scammers impersonate lesser-known financial services firms without digital footprint, mirror real ABNs and AFS licence numbers, create fake investor reviews, claim government deposit guarantee coverage. Victims directed to fake bank accounts or third-party transfers.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-30T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-04T10:51:35.343173"
+  },
+  {
+    "id": "alert-afp-rebootcyber-fraud-2026-03-19",
+    "title": "Fake AFP and ReportCyber Scam\u2014Two-Stage Cryptocurrency Extortion. First scammer poses as AFP officer claiming victim involved in data breach, submits fraudulent ReportCyber report in victim's name with official reference numbers. Second scammer impersonates crypto platform demanding seed phrases or 'cold storage' fund transfers. Targets cryptocurrency account holders.",
+    "source": "Scamwatch",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "2026-03-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-04T10:51:35.343173"
+  },
+  {
+    "id": "alert-seasonal-workers-loan-scam-2026-04-10",
+    "title": "Loan Fee Scam Targeting PALM Scheme Workers. Fraudsters target Pacific Australia Labour Mobility workers with loan offers, charge upfront 'processing fees', gain access to banking credentials during application process. Once loan approved, scammers use victim's phone to transfer entire loan amount to their own accounts.",
+    "source": "Scamwatch",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-04-10T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-04T10:51:35.343173"
+  },
+  {
+    "id": "alert-ai-phishing-2026-05-20",
+    "title": "AI-Enhanced Phishing Emails Mask Grammar and Linguistic Red Flags. Fraudsters leverage generative AI to eliminate spelling/grammar errors that traditionally revealed phishing attempts. Emails impersonate trusted colleagues, contain sophisticated formatting, link to malware or credential harvesting domains. Affects corporate and institutional email users.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-05-20T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-04T10:51:35.343173"
+  },
+  {
+    "id": "alert-celebrity-deepfake-ads-2026-04-15",
+    "title": "Deepfake Video and Photo Manipulation Scam Ads on Facebook/YouTube. Scammers create fake sponsored advertisements using manipulated video/images of Australian celebrities impersonating political figures. Clickbait headlines promote cryptocurrency schemes or fake wealth-generation products. Victims directed to malware or credential-harvesting sites.",
+    "source": "News",
+    "category": "Investment",
+    "severity": "MEDIUM",
+    "date": "2026-04-15T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-04T10:51:35.343173"
+  },
+  {
+    "id": "alert-payid-marketplace-fraud-2026-06-01",
+    "title": "PayID Exploitation in Facebook Marketplace Buy/Sell Transactions. Buyers on Facebook Marketplace request PayID payment method from sellers, forcing disclosure of phone number or email address linked to buyer's account. Compromised identity details used for follow-on fraud or account takeover.",
+    "source": "Social",
+    "category": "Shopping",
+    "severity": "MEDIUM",
+    "date": "2026-06-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-04T10:51:35.343173"
   }
 ]
