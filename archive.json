@@ -1429,5 +1429,95 @@
     "date": "2026-06-01T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-06-04T10:51:35.343173"
+  },
+  {
+    "id": "SCAMWATCH-062026-001",
+    "title": "Fake Crypto Trading Platform Recruitment: Scammers infiltrate messaging app investment groups and direct members to fraudulent crypto exchanges promising automated trading profits. Targets financially motivated users in share trading/stock tips communities seeking passive income.",
+    "source": "Scamwatch",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-05T10:59:54.444740"
+  },
+  {
+    "id": "SCAMWATCH-062026-002",
+    "title": "SMS Impersonation of Major Retailers: Criminals spoof SMS from Amazon and YouTube to harvest credentials. Typically claims account action required or verification needed, directs targets to clone websites. Impacts broad consumer base relying on legitimate e-commerce platforms.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-05T10:59:54.444740"
+  },
+  {
+    "id": "ACCC-062026-003",
+    "title": "ACCC Phone Number Spoofing Scam: Scammers impersonate ACCC through voice calls using spoofed official numbers from the watchdog's public contact list. Requests personal/banking info citing urgent security matters or investigations. Exploits trust in government authority to extract credentials.",
+    "source": "ACCC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-03-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-05T10:59:54.444740"
+  },
+  {
+    "id": "ASIC-062026-004",
+    "title": "AI-Powered Investment Scam Surge: ASIC removed 11,964 scam websites in 2025\u201490% increase year-over-year. Scammers use AI deepfakes in social ads impersonating celebrities/officials, promote fake trading bots with unachievable returns, forge ASIC licensing claims. Targets retail investors via social media.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-08T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-05T10:59:54.444740"
+  },
+  {
+    "id": "NEWS-062026-006",
+    "title": "Fake Event Ticket Sales Surge in 2026: Scammers sell counterfeit or non-existent concert/sports/festival tickets on social media; Perth authorities warned of fake sky lantern drone show promotions. One-in-five Australians missed events after purchasing fake tickets in 2025.",
+    "source": "News",
+    "category": "Shopping",
+    "severity": "MEDIUM",
+    "date": "2026-05-15T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-05T10:59:54.444740"
+  },
+  {
+    "id": "NEWS-062026-008",
+    "title": "Age Verification Scam Targeting Under-16 Social Media Users: Since December 2025 platform age restrictions, scammers impersonate TikTok/Facebook/Instagram claiming account suspension without age verification. Direct to fake form pages harvesting personal/financial data. Targets newly restricted youth demographic.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-01-15T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-05T10:59:54.444740"
+  },
+  {
+    "id": "ACMA-062026-009",
+    "title": "Telecom SIM Porting Fraud Enabling Account Takeovers: ACMA enforcement data shows Southern Phone Company failed identity checks 168 times during number ports, resulting in $393k consumer losses; Optus Mobile also fined. Compromised numbers enable account takeovers and credential theft across banking/crypto platforms.",
+    "source": "ACCC",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "2026-04-13T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-05T10:59:54.444740"
+  },
+  {
+    "id": "NEWS-062026-011",
+    "title": "Ghost Retailer E-commerce Fraud: Fake Australian e-commerce businesses ship poor-quality knock-offs from overseas or fail to deliver. Social media/search ads mimic legitimate sites with stolen branding. Targets bargain hunters and impulse online shoppers through ad networks.",
+    "source": "News",
+    "category": "Shopping",
+    "severity": "MEDIUM",
+    "date": "2026-04-20T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-05T10:59:54.444740"
+  },
+  {
+    "id": "NEWS-062026-012",
+    "title": "2025 Scam Loss Surge Despite Report Stabilisation: Australian scam losses hit $2.18 billion across 481k+ reports in 2025\u20147.8% increase from 2024, median loss $400. Investment scams dominated at $837.7m; payment redirection and romance scams also surged. Federal government proposing $3k auto-refund scheme.",
+    "source": "News",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "2026-03-30T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-05T10:59:54.444740"
   }
 ]
