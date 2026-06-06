@@ -1519,5 +1519,85 @@
     "date": "2026-03-30T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-06-05T10:59:54.444740"
+  },
+  {
+    "id": "ASIC-2026-04-AI-INVEST",
+    "title": "AI-powered fake trading bot investment scams surging via social media ads. Scammers claim proprietary AI generates 15-40% monthly returns through fake brokerage sites and cloned apps. Target: retail investors aged 18-45 via Facebook/Instagram. Extract: funds, personal data, credentials. Notable: ASIC removed 11,964 phishing/investment scam websites in 2025 (90% increase YoY), with 32+ new sites per day still emerging.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-08T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-06T08:06:36.475726"
+  },
+  {
+    "id": "COMMBANK-2026-06-ASIC-IMPERSONATE",
+    "title": "Fraudulent letters impersonating ASIC claiming bank staff under investigation, demanding fund transfers to 'secure account'. Uses official ASIC branding and formatting. Target: retail bank customers 40+. Extract: funds to scam accounts. Notable: CommBank has blocked thousands; victims pressured with urgency and fake authority.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-06-06T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-06T08:06:36.475726"
+  },
+  {
+    "id": "ASIC-2026-05-SUPER-SCAM",
+    "title": "Aggressive cold-calling campaigns pushing retirement fund rollovers into high-risk unlicensed investments timed to financial year change. Scammers also operate fake ASIC websites harvesting banking details. Target: retirees and super-eligible workers. Extract: superannuation transfers, identity details. Notable: $4 trillion superannuation system targeted; peak exploitation period identified.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-05-29T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-06T08:06:36.475726"
+  },
+  {
+    "id": "NASC-2026-Q1-INVESTMENT-BULK",
+    "title": "Investment scams drove $45.5M losses in Q1 2026. Common vector: fake crypto trading platforms promoted in messaging groups (WhatsApp, Telegram) building trust over weeks before requesting deposits. Small withdrawals allowed to appear legitimate. Target: Gen Z investors (72% see crypto ads, 41% approached). Extract: funds, credentials, identity data.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-06-05T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-06T08:06:36.475726"
+  },
+  {
+    "id": "COMMBANK-2026-PALM-WORKER",
+    "title": "Seasonal worker loan scam targeting Pacific Australia Labour Mobility (PALM) scheme participants. Scammers offer to facilitate personal loans, charge 'processing fees', then transfer loan proceeds to their own accounts using victim's credentials. Target: migrant workers, often referred by unknowingly-compromised co-workers. Extract: loan funds ($2000-15000), banking access. Notable: serious exploitation of vulnerable migrant population.",
+    "source": "News",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-06-06T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-06T08:06:36.475726"
+  },
+  {
+    "id": "NASC-2026-FAKE-LOANS",
+    "title": "Fraudulent personal loan websites offering instant approval with minimal requirements. Scammers redirect victims to credential-harvesting pages or request upfront fees. Target: credit-stretched consumers seeking fast cash. Extract: identity documents, banking details, upfront fees ($50-500). Notable: ongoing vector identified in 2026 scamwatch alerts.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-06-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-06T08:06:36.475726"
+  },
+  {
+    "id": "NASC-2026-ACCC-SPOOFING",
+    "title": "Scammers spoof ACCC phone numbers from agency's official website, claiming investigations into account abuse or demanding payments to 'secure' funds. Some misuse ACCC acronym to impersonate unrelated orgs. Target: general public, especially older Australians. Extract: personal info, bank details, urgent transfers. Notable: ongoing since mid-2025; exploits trust in official numbers.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-06-23T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-06T08:06:36.475726"
+  },
+  {
+    "id": "NASC-2026-FAKE-GAMBLING",
+    "title": "Proliferation of fake online gambling sites masquerading as legitimate operators. Scammers host cloned branding, fake profit charts, and require deposits before allowing 'withdrawals'. Target: recreational gamblers, younger demographics. Extract: funds, payment card details. Notable: 1,960 fake gambling sites removed in Q1 2026 alone; represents 33% of all takedowns.",
+    "source": "ACCC",
+    "category": "Shopping",
+    "severity": "MEDIUM",
+    "date": "2026-06-05T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-06T08:06:36.475726"
   }
 ]
