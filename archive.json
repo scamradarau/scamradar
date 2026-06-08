@@ -1689,5 +1689,75 @@
     "date": "2026-06-07T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-06-07T09:52:27.263317"
+  },
+  {
+    "id": "ACCC-2026-06-003",
+    "title": "ACCC Phone Number Spoofing for Personal Data Extraction. Scammers spoof ACCC contact numbers, claiming to investigate fraud or offer refunds. Requests for passwords, bank details, and security information follow urgency narrative. Publicised phone numbers from ACCC website used for social engineering.",
+    "source": "ACCC",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-03-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-08T13:55:47.732713"
+  },
+  {
+    "id": "CB-2026-06-004",
+    "title": "Scambling Epidemic: Fake Online Casinos Operating Across Australia. Telstra blocked 1,800+ domains January-May 2026. Criminals replicate legitimate casino branding, offer bonuses, present fake lobbies indistinguishable from real operators. Financial and personal data harvesting primary goal.",
+    "source": "News",
+    "category": "Shopping",
+    "severity": "HIGH",
+    "date": "2026-06-06T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-08T13:55:47.732713"
+  },
+  {
+    "id": "CB-2026-06-006",
+    "title": "PALM Scheme Workers Targeted for Loan Scams. Seasonal migrant workers offered personal loan assistance via acquaintances. Scammers request upfront fees, gain banking access, then transfer approved loan funds to fraudster accounts. Known victims from co-workers and community members.",
+    "source": "News",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-06-08T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-08T13:55:47.732713"
+  },
+  {
+    "id": "CB-2026-06-009",
+    "title": "Microsoft Teams Guest Invitation Billing Alert Scam. Criminals send Teams invitations mimicking billing alerts (subscription charges, payment issues). Notifications originate from legitimate Microsoft addresses, bypass email filters. Phone numbers or payment instructions embedded in group names.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-03-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-08T13:55:47.732713"
+  },
+  {
+    "id": "CB-2026-06-010",
+    "title": "AFP Impersonation for Cryptocurrency Fund Theft. Scammers pose as AFP officers investigating data breaches or financial crimes, demanding urgent cryptocurrency transfers or seed phrase disclosure. Pressure tactics and false arrest threats used to expedite victim compliance.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-03-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-08T13:55:47.732713"
+  },
+  {
+    "id": "CB-2026-06-011",
+    "title": "Medicare Impersonation for Personal/Financial Data. Scammers send messages with links to fake Medicare websites claiming account restoration or card replacement. Requests for personal details, banking information, and payment to restore access. Exploits healthcare access anxiety.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-03-19T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-08T13:55:47.732713"
+  },
+  {
+    "id": "ACCC-2026-06-012",
+    "title": "Investment Scam Losses Hit $837.7M Annually. Fake investment platforms via messaging groups and social media targeting retail investors. Promise exceptional returns through AI trading or cryptocurrency schemes. 2025 saw $2.18B total scam losses across all types, investment category dominant.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-03-30T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-08T13:55:47.732713"
   }
 ]
