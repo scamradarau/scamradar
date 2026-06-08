@@ -1,110 +1,110 @@
 [
   {
-    "id": "SCAMWATCH-062026-001",
-    "title": "Fake Crypto Trading Platform Recruitment: Scammers infiltrate messaging app investment groups and direct members to fraudulent crypto exchanges promising automated trading profits. Targets financially motivated users in share trading/stock tips communities seeking passive income.",
+    "id": "scamwatch-qantas-impersonation-001",
+    "title": "Qantas Impersonation Phishing Campaign via Email/SMS. Scammers masquerade as airline, urge urgent action claiming refunds or expiring loyalty points need redemption. Targets: frequent flyer members. Extract: login credentials and payment card details to access accounts and drain balances. Notable: persistent campaign ongoing since August 2025 with continued sophistication and high brand recognition value.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-02-10T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "news-asic-impersonation-letters-002",
+    "title": "ASIC Impersonation Scam via Fraudulent Physical Letters. Criminals send official-looking documents claiming bank staff under investigation, instruct recipients to transfer funds to 'secure account' to protect assets. Targets: general consumers with financial accounts. Extract: large upfront transfers to attacker-controlled accounts. Notable: formal letter format with ASIC branding adds legitimacy, recently escalated via CommBank alerts.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "scamwatch-crypto-trading-scam-003",
+    "title": "Fake Crypto Trading Platform Promotion in Messaging App Communities. Scammers recruit victims through 'share trading' and 'stock tips' groups on WhatsApp/Telegram, promote fake exchanges with AI-generated testimonials and professional interfaces. Targets: retail investors seeking quick returns. Extract: initial deposit and subsequent transfer requests citing 'fees' or 'profit releases'. Notable: pig butchering evolution, leverages trust networks and cryptocurrency volatility.",
     "source": "Scamwatch",
     "category": "Crypto",
     "severity": "HIGH",
-    "date": "2026-04-24T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "SCAMWATCH-062026-002",
-    "title": "SMS Impersonation of Major Retailers: Criminals spoof SMS from Amazon and YouTube to harvest credentials. Typically claims account action required or verification needed, directs targets to clone websites. Impacts broad consumer base relying on legitimate e-commerce platforms.",
-    "source": "Scamwatch",
-    "category": "Phishing",
-    "severity": "HIGH",
-    "date": "2026-04-24T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "ACCC-062026-003",
-    "title": "ACCC Phone Number Spoofing Scam: Scammers impersonate ACCC through voice calls using spoofed official numbers from the watchdog's public contact list. Requests personal/banking info citing urgent security matters or investigations. Exploits trust in government authority to extract credentials.",
-    "source": "ACCC",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2026-03-19T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "ASIC-062026-004",
-    "title": "AI-Powered Investment Scam Surge: ASIC removed 11,964 scam websites in 2025\u201490% increase year-over-year. Scammers use AI deepfakes in social ads impersonating celebrities/officials, promote fake trading bots with unachievable returns, forge ASIC licensing claims. Targets retail investors via social media.",
-    "source": "ASIC",
-    "category": "Investment",
-    "severity": "HIGH",
-    "date": "2026-04-08T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "NEWS-062026-005",
-    "title": "Deepfake Video Impersonation Scams Escalating: NAB blocked customer attempting $100k transfer to person appearing as celebrity via video call using AI-generated video/voice. Scammers now recreate business figures and personal contacts using public photos/audio. May not involve celebrities.",
-    "source": "News",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2026-04-01T00:00:00Z",
+    "date": "2026-06-07T00:00:00Z",
     "breaking": true
   },
   {
-    "id": "NEWS-062026-006",
-    "title": "Fake Event Ticket Sales Surge in 2026: Scammers sell counterfeit or non-existent concert/sports/festival tickets on social media; Perth authorities warned of fake sky lantern drone show promotions. One-in-five Australians missed events after purchasing fake tickets in 2025.",
-    "source": "News",
-    "category": "Shopping",
+    "id": "scamwatch-recruiter-impersonation-004",
+    "title": "Employment Scam via SMS Impersonating Major Tech Companies. Criminals pose as recruiters for Amazon and YouTube, offer high-paid work-from-home roles with flexible hours. Targets: job seekers and underemployed workers. Extract: upfront fees for 'training' or 'equipment', banking details for 'salary deposits'. Notable: spike in reports, exploits desperation during economic uncertainty and leverages legitimate company brand trust.",
+    "source": "Scamwatch",
+    "category": "Employment",
     "severity": "MEDIUM",
-    "date": "2026-05-15T00:00:00Z",
-    "breaking": false
+    "date": "2026-06-07T00:00:00Z",
+    "breaking": true
   },
   {
-    "id": "NEWS-062026-007",
-    "title": "Courier/Parcel Delivery Impersonation Scam Network: Widespread SMS claiming undelivered parcels require address updates or payment for release. Mimics Australia Post branding, routes to credential-harvesting pages. Targets online shoppers during peak delivery seasons.",
+    "id": "news-scambling-gambling-fraud-005",
+    "title": "'Scambling' Fraudulent Casino Websites with AI-Enhanced Marketing. Criminals operate fake online casinos promoted via social media with AI-generated videos featuring celebrity endorsements, professional UX matching legitimate offshore operators. Targets: online gambling players accustomed to unregulated sites. Extract: deposits and personal information; refund withdrawal requests denied. Notable: 1,960 scambling sites disrupted in Q1 2026; Telstra blocked 1,800+ domains Jan-May alone.",
     "source": "News",
-    "category": "Phishing",
-    "severity": "MEDIUM",
-    "date": "2026-05-10T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "NEWS-062026-008",
-    "title": "Age Verification Scam Targeting Under-16 Social Media Users: Since December 2025 platform age restrictions, scammers impersonate TikTok/Facebook/Instagram claiming account suspension without age verification. Direct to fake form pages harvesting personal/financial data. Targets newly restricted youth demographic.",
-    "source": "News",
-    "category": "Phishing",
-    "severity": "MEDIUM",
-    "date": "2026-01-15T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "ACMA-062026-009",
-    "title": "Telecom SIM Porting Fraud Enabling Account Takeovers: ACMA enforcement data shows Southern Phone Company failed identity checks 168 times during number ports, resulting in $393k consumer losses; Optus Mobile also fined. Compromised numbers enable account takeovers and credential theft across banking/crypto platforms.",
-    "source": "ACCC",
     "category": "Other",
     "severity": "HIGH",
-    "date": "2026-04-13T00:00:00Z",
-    "breaking": false
+    "date": "2026-06-06T00:00:00Z",
+    "breaking": true
   },
   {
-    "id": "NEWS-062026-010",
-    "title": "Romance Scam Losses Accelerate in 2025: ACCC reports spike in romance fraud losses and reports across 2025. Scammers build trust over weeks/months before requesting money for emergencies or investments. Often isolate victims from friends/family using emotional manipulation tactics.",
+    "id": "news-whatsapp-investment-romance-scam-006",
+    "title": "WhatsApp Investment and Romance Scams Targeting Individual Victims. Scammers establish fake romantic relationships or investment advisory personas via WhatsApp, gradually introduce 'investment opportunities' with fake platforms or fake deposit confirmations. Targets: lonely individuals and novice investors. Extract: large capital transfers justified as 'initial investment'. Notable: CommBank alert indicates active wave; exploits private messaging intimacy and trust.",
     "source": "News",
     "category": "Romance",
-    "severity": "MEDIUM",
-    "date": "2026-03-30T00:00:00Z",
+    "severity": "HIGH",
+    "date": "2026-06-07T00:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "news-palm-seasonal-worker-loan-scam-007",
+    "title": "Personal Loan Application Fraud Targeting Pacific Australia Labour Mobility Scheme Workers. Accomplices pose as loan brokers, offer assistance with applications for fees, gain access to banking credentials through 'verification process', then drain accounts post-approval. Targets: migrant workers in visa programs with limited financial literacy. Extract: entire loan amounts via remote account access. Notable: CommBank alert; victims often unknowingly introduce peers, creating network effect.",
+    "source": "News",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-06-07T00:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "asic-impersonation-text-scam-008",
+    "title": "ASIC Text Message Impersonation Using Alpha Tags. Fraudsters send SMS claiming to represent ASIC, requesting payments to release funds or assets, using 'alpha tags' (branded sender names like 'ASIC') instead of phone numbers to bypass fraud filters. Targets: financial account holders and small business operators. Extract: urgent transfer requests. Notable: ASIC officially stated it never uses SMS alpha tags; technique exploits institutional trust.",
+    "source": "ASIC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-06-07T00:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "news-accc-phone-spoofing-009",
+    "title": "ACCC Phone Number Spoofing Scam via Caller ID Spoofing. Criminals use caller ID masking technology to appear as ACCC contact numbers listed on official website, claim victims owe refunds/penalties or impersonate law enforcement threatening arrest/deportation. Targets: general public with threat-based social engineering. Extract: banking details, personal information, gift card codes. Notable: publicly available ACCC numbers exploited; uses false urgency and legal authority.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-06-23T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "NEWS-062026-011",
-    "title": "Ghost Retailer E-commerce Fraud: Fake Australian e-commerce businesses ship poor-quality knock-offs from overseas or fail to deliver. Social media/search ads mimic legitimate sites with stolen branding. Targets bargain hunters and impulse online shoppers through ad networks.",
+    "id": "news-ai-voice-phishing-010",
+    "title": "AI-Generated Voice Calls and Deepfake Impersonation Campaigns. Scammers use generative AI to create voice clones impersonating financial institution representatives or known personal contacts (family members), request urgent fund transfers or credential verification. Targets: elderly and technologically unfamiliar consumers. Extract: wire transfers and credential captures. Notable: NordVPN report June 2026 flags AI as 'dangerous weapon'; highly convincing audio makes detection difficult.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-06-07T00:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "news-fake-online-betting-vouchers-011",
+    "title": "Holiday-Timed Fake Ticket and Prize Scams Exploiting Seasonal Demand. Fraudsters create fake concert ticket reseller profiles on Facebook Marketplace, Gumtree, eBay offering sold-out event tickets at below-market prices; similarly, scratchie giveaway and travel prize promotions redirect to phishing sites. Targets: entertainment seekers and aspirational holidaymakers. Extract: payment without delivery and personal data. Notable: ACCC Q4 2025 warning; seasonal spike expected mid-year.",
     "source": "News",
     "category": "Shopping",
     "severity": "MEDIUM",
-    "date": "2026-04-20T00:00:00Z",
+    "date": "2026-06-07T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "NEWS-062026-012",
-    "title": "2025 Scam Loss Surge Despite Report Stabilisation: Australian scam losses hit $2.18 billion across 481k+ reports in 2025\u20147.8% increase from 2024, median loss $400. Investment scams dominated at $837.7m; payment redirection and romance scams also surged. Federal government proposing $3k auto-refund scheme.",
+    "id": "news-disaster-relief-donation-scam-012",
+    "title": "Cyclone Alfred Disaster Relief Charity Impersonation and Fake Donation Sites. Criminals create fraudulent charities and donation platforms exploiting natural disaster victims' generosity, using legitimate organisation names and logos on fake websites. Targets: compassionate donors seeking to help affected communities. Extract: donation payments and financial information. Notable: CommBank alert references Cyclone Alfred; disaster relief scams documented repeatedly across Australia.",
     "source": "News",
     "category": "Other",
-    "severity": "HIGH",
-    "date": "2026-03-30T00:00:00Z",
+    "severity": "MEDIUM",
+    "date": "2026-06-07T00:00:00Z",
     "breaking": false
   }
 ]
