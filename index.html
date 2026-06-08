@@ -361,9 +361,17 @@ function formatDate(dateStr) {
 function buildTicker(data) {
   const breaking = data.filter(a => a.breaking);
   const items = breaking.length ? breaking : data.slice(0,3);
-  if (!items.length) { document.getElementById("tickerInner").innerHTML = '<span class="tick-item">Intelligence feed is current — no breaking alerts</span>'; return; }
+  if (!items.length) {
+    document.getElementById("tickerInner").innerHTML = '<span class="tick-item">Intelligence feed is current — no breaking alerts</span>';
+    return;
+  }
   const txt = items.map(a => `<span class="tick-item">${a.title} [${a.source}]</span>`).join('<span class="tick-item" style="opacity:0.4">◆</span>');
-  document.getElementById("tickerInner").innerHTML = txt + txt;
+  const inner = document.getElementById("tickerInner");
+  inner.innerHTML = txt + txt;
+
+  // Scale duration with content length so reading speed stays consistent
+  const duration = Math.max(60, items.length * 18);
+  inner.style.animationDuration = duration + 's';
 }
 
 function buildFilters() {
