@@ -1759,5 +1759,105 @@
     "date": "2026-03-30T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-06-08T13:55:47.732713"
+  },
+  {
+    "id": "202406-001",
+    "title": "ACCC Phone Spoofing Impersonation Campaign\u2014Scammers using publicly available ACCC numbers to pose as agency officials via phone calls, requesting passwords and bank details with artificial urgency to extract credentials and money from unsuspecting victims.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2025-06-23T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "202406-003",
+    "title": "AFP Officer Impersonation and Fake ReportCyber Submissions\u2014Criminals posing as Australian Federal Police officers via phone, claiming victims are in data breaches, demanding cryptocurrency transfers or seed phrases using forged ReportCyber reports created with victim personal information.",
+    "source": "AFP",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2025-12-10T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "202406-004",
+    "title": "Cambodian Scam Compound Operation\u2014Joint AFP and Thai police raid disclosed operational script for impersonating law enforcement, moving victims into encrypted calls, extracting banking details via fake 'surveillance protocol' with documents on ~300 Australian victims seized.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-06-08T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "202406-005",
+    "title": "ASIC Impersonation Phishing and Payment Release Scams\u2014Fraudulent emails and texts claiming ASIC identity requesting payments to release funds or assets, using ASIC branding and infrastructure references to deceive recipients into fund transfers.",
+    "source": "ASIC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2025-03-21T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "202406-006",
+    "title": "Pig Butchering Romance Investment Scams\u2014Scammers forming fake relationships on dating apps and social media, hinting at crypto wealth, directing victims to clone investment platforms where initial returns appear genuine but withdrawals are blocked once larger sums are invested.",
+    "source": "Scamwatch",
+    "category": "Romance",
+    "severity": "HIGH",
+    "date": "2026-05-07T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "202406-007",
+    "title": "Binance and Crypto Exchange Impersonation Campaign\u2014Over 130 Australian victims targeted via SMS and encrypted platforms by scammers claiming account breaches, requesting seed phrases and cryptocurrency transfers to 'trust wallets' controlled by criminals.",
+    "source": "AFP",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-03-20T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "202406-008",
+    "title": "Fake Crypto Trading Platforms in Messaging Groups\u2014Scammers promoting fraudulent crypto asset trading platforms to members of 'share trading' and 'stock tips' messaging groups with clone sites and fake trading data to simulate profits before exit scamming.",
+    "source": "Scamwatch",
+    "category": "Crypto",
+    "severity": "MEDIUM",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "202406-009",
+    "title": "AI-Generated Phishing and Deepfake Investment Ads\u2014Sponsored advertisements on Facebook and YouTube using AI-manipulated images of Australian celebrities and politicians promoting 'get-rich-quick' crypto schemes with salacious clickbait, leading to malware or credential harvesting sites.",
+    "source": "News",
+    "category": "Investment",
+    "severity": "MEDIUM",
+    "date": "2026-05-07T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "202406-010",
+    "title": "Pacific Australia Labour Mobility Seasonal Worker Loan Scams\u2014Individuals targeting PALM scheme workers by posing as loan facilitators, charging upfront fees and gaining banking access before transferring large sums out after loan approval using victim phones.",
+    "source": "News",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "202406-011",
+    "title": "Crypto ATM Scam Surge\u2014Investment and romance scammers pressuring victims to deposit cash at cryptocurrency ATMs for transfers, with 150 ReportCyber incidents in 12 months totalling $3.1 million average loss per victim exceeding $20,000, targeting Australians over 50.",
+    "source": "AFP",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2025-06-02T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-09T10:45:29.192624"
   }
 ]
