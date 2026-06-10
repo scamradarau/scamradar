@@ -1859,5 +1859,55 @@
     "date": "2025-06-02T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-06-09T10:45:29.192624"
+  },
+  {
+    "id": "ASIC-20260608-AI-DEEPFAKE-SCAMS",
+    "title": "AI-Powered Deepfake and Voice Cloning Campaigns Targeting Investors. Scammers use AI-generated deepfake videos of celebrities and politicians in sponsored social media ads promoting cryptocurrency schemes, paired with voice cloning for 'virtual kidnapping' extortion calls. Targets investors and family members with emotional manipulation. Extracts funds through fake investment platforms and emergency payments.",
+    "source": "News",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-06-08T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-10T11:48:35.839322"
+  },
+  {
+    "id": "ASIC-20260605-AGED-CARE-WORKER-BANK-SCAM",
+    "title": "Bank Impersonation Scam Drains Aged-Care Worker's Life Savings. Scammers impersonate bank representatives via phone claiming fraud investigation on victim's account, requesting password and one-time codes to 'secure' funds. Targets vulnerable workers, particularly in aged-care sector. Extracts $33,000+ in minutes through account takeover.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-06-05T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-10T11:48:35.839322"
+  },
+  {
+    "id": "AFP-20260604-NDIS-FRAUD-ARREST",
+    "title": "Sydney Man Arrested Over $1.5 Million NDIS Fraud Scheme. Authorities arrest alleged mastermind who diverted public disability support funds through fraudulent participant claims. Targets vulnerable NDIS recipients and their families. Steals government payments through fake service provider invoices and inflated care service claims.",
+    "source": "AFP",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "2026-06-04T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-10T11:48:35.839322"
+  },
+  {
+    "id": "PHISHING-20260602-CAPTCHA-SCAM",
+    "title": "Fake CAPTCHA Verification Scam Deploying Malware via Command Injection. Phishing pages mimic legitimate CAPTCHA verification asking users to execute Windows keyboard commands (Windows+R, Ctrl+V, Enter) that paste and run hidden malware. Targets Windows users on compromised or spoofed websites. Downloads infostealer malware harvesting passwords and banking credentials.",
+    "source": "News",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-06-02T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-10T11:48:35.839322"
+  },
+  {
+    "id": "ASIC-20260601-PALM-SEASONAL-WORKER-LOAN-SCAM",
+    "title": "Loan Fee Scam Targeting Pacific Australia Labour Mobility Seasonal Workers. Scammers pose as migration agents offering assistance with personal loan applications, charging upfront 'processing fees' then accessing victim banking to steal approved loan proceeds. Targets international seasonal workers with limited financial literacy and community networks. Transfers full loan amounts to scammer accounts after fraud approval.",
+    "source": "News",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-06-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-10T11:48:35.839322"
   }
 ]

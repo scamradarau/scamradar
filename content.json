@@ -1,110 +1,110 @@
 [
   {
-    "id": "202406-001",
-    "title": "ACCC Phone Spoofing Impersonation Campaign\u2014Scammers using publicly available ACCC numbers to pose as agency officials via phone calls, requesting passwords and bank details with artificial urgency to extract credentials and money from unsuspecting victims.",
+    "id": "SW-20260610-CRYPTO-TRADING",
+    "title": "Fake Cryptocurrency Trading Platforms Promoted via Messaging Groups. Scammers impersonate stock tip group administrators on messaging apps, luring members to fraudulent crypto asset trading platforms mimicking legitimate exchanges. Targets investors seeking quick returns who join share-trading groups. Extracts funds transferred to fake wallets and steals login credentials for account takeover.",
     "source": "Scamwatch",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-06-10T00:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "SW-20260610-SMS-IMPERSONATION",
+    "title": "SMS Impersonation of Amazon and YouTube Recruitment. Scammers text victims posing as recruiters for major tech companies offering well-paid remote work. Targets job seekers and unemployed Australians via SMS. Extracts payment for fake training or processing fees, redirects to credential-harvesting pages, deploys mobile malware requesting contact and SMS access.",
+    "source": "Scamwatch",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-06-10T00:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "ACCC-20260610-SCAM-PREVENTION-FRAMEWORK",
+    "title": "Scams Prevention Framework: AFCA Appointed as Central Dispute Resolution Body. Federal government formally designates banks, telcos, and digital platforms for mandatory anti-scam obligations from July 1, 2026. Targets all Australians using regulated services. Requires reimbursement of scam losses up to $3,000, with AFCA handling complaints from March 31, 2027.",
+    "source": "ACCC",
+    "category": "Other",
+    "severity": "MEDIUM",
+    "date": "2026-06-10T12:00:00Z",
+    "breaking": true
+  },
+  {
+    "id": "ACCC-20260609-ASIC-PHISHING-LETTER",
+    "title": "Fraudulent ASIC Impersonation Letters Targeting Banks. Scammers send official-looking letters with ASIC branding claiming bank staff are under investigation, instructing recipients to transfer funds to 'secure accounts' for asset protection. Targets bank customers through postal mail. Extracts large fund transfers through social engineering exploiting authority of regulator.",
+    "source": "ACCC",
     "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2025-06-23T00:00:00Z",
+    "date": "2026-06-09T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "202406-002",
-    "title": "Qantas Email and SMS Phishing Spike\u2014Scammers impersonating Qantas via emails and texts claiming refunds, gifts, or expiring points with urgency tactics, embedding malicious links and using brand logos to harvest credentials and personal information.",
-    "source": "Scamwatch",
-    "category": "Phishing",
-    "severity": "HIGH",
-    "date": "2026-02-09T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "202406-003",
-    "title": "AFP Officer Impersonation and Fake ReportCyber Submissions\u2014Criminals posing as Australian Federal Police officers via phone, claiming victims are in data breaches, demanding cryptocurrency transfers or seed phrases using forged ReportCyber reports created with victim personal information.",
-    "source": "AFP",
-    "category": "Impersonation",
-    "severity": "HIGH",
-    "date": "2025-12-10T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "202406-004",
-    "title": "Cambodian Scam Compound Operation\u2014Joint AFP and Thai police raid disclosed operational script for impersonating law enforcement, moving victims into encrypted calls, extracting banking details via fake 'surveillance protocol' with documents on ~300 Australian victims seized.",
+    "id": "ASIC-20260608-AI-DEEPFAKE-SCAMS",
+    "title": "AI-Powered Deepfake and Voice Cloning Campaigns Targeting Investors. Scammers use AI-generated deepfake videos of celebrities and politicians in sponsored social media ads promoting cryptocurrency schemes, paired with voice cloning for 'virtual kidnapping' extortion calls. Targets investors and family members with emotional manipulation. Extracts funds through fake investment platforms and emergency payments.",
     "source": "News",
-    "category": "Impersonation",
+    "category": "Investment",
     "severity": "HIGH",
     "date": "2026-06-08T00:00:00Z",
     "breaking": true
   },
   {
-    "id": "202406-005",
-    "title": "ASIC Impersonation Phishing and Payment Release Scams\u2014Fraudulent emails and texts claiming ASIC identity requesting payments to release funds or assets, using ASIC branding and infrastructure references to deceive recipients into fund transfers.",
-    "source": "ASIC",
+    "id": "ASIC-20260605-AGED-CARE-WORKER-BANK-SCAM",
+    "title": "Bank Impersonation Scam Drains Aged-Care Worker's Life Savings. Scammers impersonate bank representatives via phone claiming fraud investigation on victim's account, requesting password and one-time codes to 'secure' funds. Targets vulnerable workers, particularly in aged-care sector. Extracts $33,000+ in minutes through account takeover.",
+    "source": "News",
     "category": "Impersonation",
     "severity": "HIGH",
-    "date": "2025-03-21T00:00:00Z",
+    "date": "2026-06-05T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "202406-006",
-    "title": "Pig Butchering Romance Investment Scams\u2014Scammers forming fake relationships on dating apps and social media, hinting at crypto wealth, directing victims to clone investment platforms where initial returns appear genuine but withdrawals are blocked once larger sums are invested.",
-    "source": "Scamwatch",
+    "id": "AFP-20260604-NDIS-FRAUD-ARREST",
+    "title": "Sydney Man Arrested Over $1.5 Million NDIS Fraud Scheme. Authorities arrest alleged mastermind who diverted public disability support funds through fraudulent participant claims. Targets vulnerable NDIS recipients and their families. Steals government payments through fake service provider invoices and inflated care service claims.",
+    "source": "AFP",
+    "category": "Other",
+    "severity": "HIGH",
+    "date": "2026-06-04T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "ASIC-20260603-ATO-MALADMINISTRATION",
+    "title": "Independent Investigation Uncovers ATO Maladministration; Tax Office Pursued Deceased Taxpayer for Five Years. Ombudsman review finds evidence of systemic procedural failures and embedded misconduct within ATO. Targets low-income and elderly taxpayers through aggressive debt collection. Extracts funds through penalty notices and enforcement action against vulnerable individuals.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "MEDIUM",
+    "date": "2026-06-03T00:00:00Z",
+    "breaking": false
+  },
+  {
+    "id": "ASIC-20260603-ROMANCE-SCAMS-LEGISLATION",
+    "title": "MP Pushes to Classify Romance Scams as Financial Abuse; $28M Lost in 2025. Independent MP Zali Steggall advocates legal reclassification as romantic manipulation results in loan take-outs and fund transfers. Targets emotionally vulnerable individuals, elderly, and isolated persons. Extracts savings through fake relationship development over months followed by emergency fund requests.",
+    "source": "News",
     "category": "Romance",
     "severity": "HIGH",
-    "date": "2026-05-07T00:00:00Z",
+    "date": "2026-06-03T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "202406-007",
-    "title": "Binance and Crypto Exchange Impersonation Campaign\u2014Over 130 Australian victims targeted via SMS and encrypted platforms by scammers claiming account breaches, requesting seed phrases and cryptocurrency transfers to 'trust wallets' controlled by criminals.",
-    "source": "AFP",
-    "category": "Crypto",
-    "severity": "HIGH",
-    "date": "2026-03-20T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "202406-008",
-    "title": "Fake Crypto Trading Platforms in Messaging Groups\u2014Scammers promoting fraudulent crypto asset trading platforms to members of 'share trading' and 'stock tips' messaging groups with clone sites and fake trading data to simulate profits before exit scamming.",
-    "source": "Scamwatch",
-    "category": "Crypto",
-    "severity": "MEDIUM",
-    "date": "2026-04-24T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "202406-009",
-    "title": "AI-Generated Phishing and Deepfake Investment Ads\u2014Sponsored advertisements on Facebook and YouTube using AI-manipulated images of Australian celebrities and politicians promoting 'get-rich-quick' crypto schemes with salacious clickbait, leading to malware or credential harvesting sites.",
+    "id": "PHISHING-20260602-CAPTCHA-SCAM",
+    "title": "Fake CAPTCHA Verification Scam Deploying Malware via Command Injection. Phishing pages mimic legitimate CAPTCHA verification asking users to execute Windows keyboard commands (Windows+R, Ctrl+V, Enter) that paste and run hidden malware. Targets Windows users on compromised or spoofed websites. Downloads infostealer malware harvesting passwords and banking credentials.",
     "source": "News",
-    "category": "Investment",
-    "severity": "MEDIUM",
-    "date": "2026-05-07T00:00:00Z",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "date": "2026-06-02T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "202406-010",
-    "title": "Pacific Australia Labour Mobility Seasonal Worker Loan Scams\u2014Individuals targeting PALM scheme workers by posing as loan facilitators, charging upfront fees and gaining banking access before transferring large sums out after loan approval using victim phones.",
+    "id": "ASIC-20260601-PALM-SEASONAL-WORKER-LOAN-SCAM",
+    "title": "Loan Fee Scam Targeting Pacific Australia Labour Mobility Seasonal Workers. Scammers pose as migration agents offering assistance with personal loan applications, charging upfront 'processing fees' then accessing victim banking to steal approved loan proceeds. Targets international seasonal workers with limited financial literacy and community networks. Transfers full loan amounts to scammer accounts after fraud approval.",
     "source": "News",
     "category": "Employment",
     "severity": "HIGH",
-    "date": "2026-04-14T00:00:00Z",
+    "date": "2026-06-01T00:00:00Z",
     "breaking": false
   },
   {
-    "id": "202406-011",
-    "title": "Crypto ATM Scam Surge\u2014Investment and romance scammers pressuring victims to deposit cash at cryptocurrency ATMs for transfers, with 150 ReportCyber incidents in 12 months totalling $3.1 million average loss per victim exceeding $20,000, targeting Australians over 50.",
-    "source": "AFP",
-    "category": "Crypto",
+    "id": "NAB-20260531-REWARDS-POINTS-SMS",
+    "title": "NAB Rewards Points Redemption SMS Scam Harvesting Banking Credentials. Scammers send SMS claiming victim has unredeemed NAB Reward Points expiring soon, directing to fake NAB website requesting Internet Banking login credentials and card PIN. Targets existing and former NAB customers via SMS spoofing. Steals login credentials enabling account takeover and unauthorized transactions.",
+    "source": "News",
+    "category": "Phishing",
     "severity": "HIGH",
-    "date": "2025-06-02T00:00:00Z",
-    "breaking": false
-  },
-  {
-    "id": "202406-012",
-    "title": "Romance Scam Fusion Cell Report\u2014$28.6 million stolen in 2025 via romance scammers building fake relationships and directing victims to investment platforms; taskforce removed 377 scam websites, WhatsApp accounts and blocked 168 cryptocurrency wallet addresses.",
-    "source": "ACCC",
-    "category": "Romance",
-    "severity": "HIGH",
-    "date": "2026-03-06T00:00:00Z",
+    "date": "2026-05-31T00:00:00Z",
     "breaking": false
   }
 ]
