@@ -1909,5 +1909,75 @@
     "date": "2026-06-01T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-06-10T11:48:35.839322"
+  },
+  {
+    "id": "AFP_CAMBODIA_COMPOUND_062026",
+    "title": "AFP Impersonation Via Encrypted Video Calls from Cambodian Scam Compound. Criminals impersonate AFP officers via video calls using fake logos and signage, claiming money-laundering investigations to extract banking details from 300+ Australian targets. Script recovered from January 2026 O'Smach compound raid demonstrates sophisticated social engineering blended with fake documentation and psychological manipulation.",
+    "source": "AFP",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-06-09T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-06-11T12:33:37.265398"
+  },
+  {
+    "id": "ASIC_CRYPTO_SCAM_MESSAGING_052026",
+    "title": "Fake Crypto-Asset Trading Platforms Promoted via 'Share Trading' Groups. Scammers recruit from WhatsApp and Telegram 'share trading' and 'stock tips' groups to promote fake crypto platforms displaying zero real trading activity. Victims deposit funds directly to criminals; platforms demand withdrawal fees that are never honored. ASIC coordinated warning with ACCC on 25 May 2026.",
+    "source": "ASIC",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-05-25T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-11T12:33:37.265398"
+  },
+  {
+    "id": "COMMBANK_ASIC_LETTER_SCAM_042026",
+    "title": "Fraudulent ASIC Correspondence Demanding Fund Transfers. Fake ASIC-branded letters claim bank staff under investigation and instruct recipients to transfer funds to 'secure account.' Using official ASIC branding and formatting to appear legitimate, scammers exploit authority impersonation to extract money under pretense of asset protection.",
+    "source": "ACCC",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-11T12:33:37.265398"
+  },
+  {
+    "id": "SEASONAL_WORKER_LOAN_SCAM_062026",
+    "title": "Pacific Australia Labour Mobility Workers Targeted by Loan-Fee Scams. Criminals target PALM scheme participants claiming to assist with personal loan applications for upfront 'processing fees.' Victims introduced by trusted co-workers; scammers gain banking access and transfer large sums instead of release fees, leading to serious financial losses.",
+    "source": "ACCC",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-05-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-11T12:33:37.265398"
+  },
+  {
+    "id": "INVESTMENT_SCAM_Q1_2026",
+    "title": "Investment Scams Dominate Financial Losses at $45.5M in Q1 2026. Online investment platforms, fake financial advice impersonating banks and brokers, and Ponzi schemes drive highest losses. Q1 2026 Scamwatch data shows 13,428 phishing reports across all channels; investment scams remain persistent despite NASC removal of 5,834 scam websites including 1,960 fake gambling sites.",
+    "source": "ACCC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-03-31T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-11T12:33:37.265398"
+  },
+  {
+    "id": "AI_DEEPFAKE_CELEB_SCAMS_032026",
+    "title": "AI-Generated Celebrity Deepfakes in Sponsored Social Media Ads Promoting Crypto/Investment. Fake images of Australian politicians and celebrities with clickbait headlines ('shocking scandal,' 'get rich quick crypto') direct to malware sites or credential harvesters. Scammers use paid Facebook and YouTube ad placements for mass reach; deepfake technology escalates credibility exploitation.",
+    "source": "News",
+    "category": "Investment",
+    "severity": "MEDIUM",
+    "date": "2026-05-07T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-11T12:33:37.265398"
+  },
+  {
+    "id": "CYCLONE_DONATION_SCAM_052026",
+    "title": "Fake Disaster Relief Donation Sites Exploit Natural Disaster Support Requests. Scammers create fraudulent charity websites impersonating real charities and government organizations, claiming to assist Cyclone Alfred victims. Meta and social platforms targeted with phishing ads; scammers harvest financial information from well-intentioned donors seeking to help disaster victims.",
+    "source": "ACCC",
+    "category": "Donation",
+    "severity": "MEDIUM",
+    "date": "2026-04-01T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-06-11T12:33:37.265398"
   }
 ]
