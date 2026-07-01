@@ -1979,5 +1979,95 @@
     "date": "2026-04-01T00:00:00Z",
     "breaking": false,
     "first_seen": "2026-06-11T12:33:37.265398"
+  },
+  {
+    "id": "SCAM-2026-07-001",
+    "title": "AI Voice-Clone Impersonation Scams Targeting Family Members. Scammers use AI to clone voices from social media, voicemails or videos to impersonate relatives claiming to be in accidents or financial trouble, pressuring victims for urgent money transfers via phone. Primary targets are elderly and vulnerable individuals living alone. Goal is to extract large cash transfers via bank accounts or gift cards. Critical threat: new AI-generated voice technology makes scams highly convincing, with victims unable to distinguish legitimate calls from deepfakes.",
+    "source": "Scamwatch",
+    "category": "Romance",
+    "severity": "HIGH",
+    "date": "2026-06-30T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-07-01T23:15:24.661380"
+  },
+  {
+    "id": "SCAM-2026-07-002",
+    "title": "Fake ACCC Phone Number Spoofing & Impersonation. Scammers spoof publicly available ACCC phone numbers via voice calls, claiming to be ACCC representatives requesting sensitive information like passwords and bank details, often creating artificial urgency. Targets all Australians who may trust government agency communications. Extraction goal: personal information, banking credentials. Notable: scammers use legitimate ACCC phone numbers pulled from official website, making it harder for consumers to verify.",
+    "source": "Scamwatch",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-06-23T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-07-01T23:15:24.661380"
+  },
+  {
+    "id": "SCAM-2026-07-003",
+    "title": "AI-Powered Investment Scams Via Social Media Ads. Scammers use AI-generated deepfake videos, fake celebrity endorsements and fabricated news articles to promote fake trading platforms and crypto investment schemes on Facebook, Instagram and TikTok, directing victims to phishing sites. Targets: novice and experienced investors, particularly younger demographics. Extraction: investment capital and personal financial information. High threat: ASIC removed 11,964 phishing and investment scam websites in 2025 (90% increase), averaging 32 sites per day.",
+    "source": "ASIC",
+    "category": "Investment",
+    "severity": "HIGH",
+    "date": "2026-04-08T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-07-01T23:15:24.661380"
+  },
+  {
+    "id": "SCAM-2026-07-004",
+    "title": "Fraudulent ASIC Impersonation Letters Demanding Fund Transfers. Scammers send official-looking letters claiming to be from ASIC, using real ASIC branding, stating bank staff are under investigation and demanding victims transfer funds to a 'secure account' for asset protection. Targets: banking customers, general public. Extraction: large sums of money via bank transfers. Red flag: ASIC will never request payments or ask customers to transfer money to protect accounts.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-06-15T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-07-01T23:15:24.661380"
+  },
+  {
+    "id": "SCAM-2026-07-005",
+    "title": "Fake Food Delivery Platform Scams Targeting Restaurants & Drivers. Scammers impersonate DoorDash, Uber Eats employees, restaurants or customers via SMS and email, posing as either service representatives requesting account details or fake customers arranging orders with payment complications. Targets: restaurant owners, delivery drivers, platform customers. Extraction: login credentials, payment information, delivery fees. Ongoing trend: major exploitation of rising gig economy workers.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-07-01T23:15:24.661380"
+  },
+  {
+    "id": "SCAM-2026-07-006",
+    "title": "Crypto Investment Scams Via Share Trading Messaging Groups. Scammers promote fake crypto asset trading platforms to people who have joined WhatsApp, Telegram or Facebook 'share trading' and 'stock tips' groups, presenting fake trading bots claiming AI-generated returns and fake news articles with celebrity endorsements. Targets: retail investors, people seeking quick returns. Extraction: investment funds transferred to crypto wallets, personal financial data. Notable: crypto scams account for nearly half of investment losses.",
+    "source": "Scamwatch",
+    "category": "Crypto",
+    "severity": "HIGH",
+    "date": "2026-04-24T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-07-01T23:15:24.661380"
+  },
+  {
+    "id": "SCAM-2026-07-007",
+    "title": "ATO/myGov Cryptocurrency Impersonation Email Scams. Scammers send phishing emails impersonating the ATO or myGov, claiming victims hold cryptocurrency in non-KYC decentralised wallets and demanding immediate declaration by phone to avoid prosecution or asset seizure. Targets: taxpayers, MyGov users. Extraction: personal information, cryptocurrency asset details, financial account access. Critical: ATO will never email demanding immediate cryptocurrency disclosure or threaten legal action.",
+    "source": "Scamwatch",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "date": "2026-02-15T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-07-01T23:15:24.661380"
+  },
+  {
+    "id": "SCAM-2026-07-008",
+    "title": "Fake Loan Impersonation Targeting Pacific Labour Mobility Workers. Scammers target seasonal workers under PALM scheme via SMS and community networks, offering personal loan assistance and claiming to collect a processing or verification fee upfront. After obtaining banking details and fee payment, scammers use victim's phone to transfer large sums from victim's account instead of loan proceeds. Targets: migrant workers, particularly vulnerable populations with limited English. Extraction: upfront fees and bulk bank account transfers.",
+    "source": "News",
+    "category": "Employment",
+    "severity": "HIGH",
+    "date": "2026-04-14T00:00:00Z",
+    "breaking": true,
+    "first_seen": "2026-07-01T23:15:24.661380"
+  },
+  {
+    "id": "SCAM-2026-07-011",
+    "title": "Bank Impersonation Using Data Breach Information & AI Voices. Scammers call victims using AI-generated Australian-accented voices, citing personal information sourced from data breaches (emails, names), claiming to be bank fraud departments, requesting password, OTP or account verification details under the guise of fraud investigation. Targets: general banking customers, data breach victims. Extraction: banking credentials, one-time passwords, account access. WA scam data shows $257,000 stolen from 20 victims in 2025 alone.",
+    "source": "News",
+    "category": "Impersonation",
+    "severity": "HIGH",
+    "date": "2026-04-08T00:00:00Z",
+    "breaking": false,
+    "first_seen": "2026-07-01T23:15:24.661380"
   }
 ]
